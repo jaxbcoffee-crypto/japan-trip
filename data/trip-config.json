@@ -1,0 +1,50 @@
+{
+  "trip": {
+    "startDate": "2027-04-01",
+    "endDate": "2027-04-21",
+    "datesStatus": "confirmed",
+    "homeTimezone": "America/Los_Angeles",
+    "travelers": 4,
+    "travelersStatus": "placeholder",
+    "travelersNote": "Group is 2–8 including 1 teenager. Use 4 as placeholder. Confirm exact count before Phase 4 JR Pass calc."
+  },
+  "itinerary": {
+    "pattern": "Golden Route + multiple day trips",
+    "status": "ingested from japan_itinerary_refined.txt",
+    "cityAllocation": {
+      "Tokyo": { "days": 8, "dates": "2027-04-01 to 2027-04-08" },
+      "Kyoto": { "days": 5, "dates": "2027-04-09 to 2027-04-13" },
+      "Osaka": { "days": 8, "dates": "2027-04-14 to 2027-04-21" }
+    },
+    "dayTripsFromTokyo": ["Nikko (day 7)", "Kamakura (day 8)"],
+    "dayTripsFromKyoto": ["Nara (day 13)"],
+    "dayTripsFromOsaka": ["Himeji (day 16)", "Miyajima/Hiroshima (day 17)", "Kobe (day 20 flex)"],
+    "hotels": {
+      "tokyo_days1to4": null,
+      "tokyo_days5to8": "HOSHINOYA TOKYO — 1-9-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+      "kyoto": "Kyoto Machiya Kamogawa Gardens — 448-1 Inaricho, Higashiyama-ku, Kyoto 605-0068",
+      "osaka": "Hilton Osaka — 1-8-8 Umeda, Kita-ku, Osaka 530-0001"
+    },
+    "mustBookInAdvance": [
+      { "name": "Shibuya Sky Observation Deck", "day": 3, "leadTime": "2–4 weeks" },
+      { "name": "teamLab Planets TOKYO", "day": 4, "leadTime": "1–2 months — sells out fast" },
+      { "name": "Universal Studios Japan", "day": 19, "leadTime": "2–4 weeks + Express Pass" }
+    ],
+    "jrPassNote": "Source file recommends activating 7-day JR Pass on Day 9 (covers through Day 15). But day trips on Days 16 (Himeji) and 17 (Miyajima) also use JR — confirm whether 14-day pass is needed before Phase 4."
+  },
+  "preferences": {
+    "dietary": [],
+    "tattooPolicy": "not_applicable",
+    "expenseTracker": "deferred"
+  },
+  "deploy": {
+    "domain": "vercel_assigned",
+    "customDomain": null
+  },
+  "openDecisionsRemaining": [
+    "Exact traveler count (2–8 range — confirm before Phase 4 JR Pass calc)",
+    "JR Pass duration (7-day or 14-day — see jrPassNote above)",
+    "Days 1–4 Tokyo hotel (unspecified in source itinerary)",
+    "Whether to add an expense tracker after Phase 9"
+  ]
+}

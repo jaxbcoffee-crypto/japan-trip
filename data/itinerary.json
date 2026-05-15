@@ -1,0 +1,1072 @@
+{
+  "trip": {
+    "startDate": "2027-04-01",
+    "endDate": "2027-04-21",
+    "travelers": 4,
+    "homeTimezone": "America/Los_Angeles"
+  },
+  "days": [
+    {
+      "date": "2027-04-01",
+      "city": "Tokyo",
+      "notes": "Arrival day. Flexible pace — account for jet lag.",
+      "stops": [
+        {
+          "id": "d01-arrival",
+          "name": "Airport Arrival (Narita or Haneda)",
+          "nameJa": "空港到着",
+          "type": "transit",
+          "notes": "Take airport express to hotel area. Check in, freshen up."
+        },
+        {
+          "id": "d01-shinjuku-gyoen",
+          "name": "Shinjuku Gyoen National Garden",
+          "nameJa": "新宿御苑",
+          "type": "sight",
+          "address": "11 Naitomachi, Shinjuku City, Tokyo 160-0014",
+          "start": "09:00",
+          "end": "16:30",
+          "notes": "Cherry blossom hotspot. Last entry 16:00. Tickets at entrance."
+        },
+        {
+          "id": "d01-tokyo-metro-govt",
+          "name": "Tokyo Metropolitan Government Building",
+          "nameJa": "東京都庁",
+          "type": "sight",
+          "address": "2-8-1 Nishishinjuku, Shinjuku City, Tokyo 163-8001",
+          "start": "19:00",
+          "notes": "FREE observation decks. South tower until 22:00, North until 17:00."
+        },
+        {
+          "id": "d01-omoide-yokocho",
+          "name": "Omoide Yokocho (Memory Lane)",
+          "nameJa": "思い出横丁",
+          "type": "food",
+          "address": "1-2 Nishishinjuku, Shinjuku City, Tokyo 160-0023",
+          "notes": "Tiny yakitori alley. Arrive before 6pm for seating."
+        },
+        {
+          "id": "d01-golden-gai",
+          "name": "Golden Gai",
+          "nameJa": "ゴールデン街",
+          "type": "free",
+          "address": "1-1-6 Kabukicho, Shinjuku City, Tokyo 160-0021",
+          "notes": "200+ tiny bars in narrow alleys. Great for photos and atmosphere."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-02",
+      "city": "Tokyo",
+      "notes": "Traditional Tokyo: Asakusa and Ueno.",
+      "stops": [
+        {
+          "id": "d02-sensoji",
+          "name": "Senso-ji Temple",
+          "nameJa": "浅草寺",
+          "type": "sight",
+          "address": "2-3-1 Asakusa, Taito City, Tokyo 111-0032",
+          "start": "06:00",
+          "end": "17:00",
+          "notes": "FREE entry. Tokyo's oldest temple. Try omikuji (fortune telling)."
+        },
+        {
+          "id": "d02-nakamise",
+          "name": "Nakamise Shopping Street",
+          "nameJa": "仲見世通り",
+          "type": "shop",
+          "address": "1-36-3 Asakusa, Taito City, Tokyo 111-0032",
+          "notes": "Try melon pan, ningyo-yaki, kibi dango."
+        },
+        {
+          "id": "d02-ueno-park",
+          "name": "Ueno Park",
+          "nameJa": "上野公園",
+          "type": "sight",
+          "address": "Uenokoen, Taito City, Tokyo 110-0007",
+          "notes": "Cherry blossom hotspot. Great for hanami (flower viewing)."
+        },
+        {
+          "id": "d02-tokyo-national-museum",
+          "name": "Tokyo National Museum",
+          "nameJa": "東京国立博物館",
+          "type": "sight",
+          "address": "13-9 Uenokoen, Taito City, Tokyo 110-8712",
+          "start": "09:30",
+          "end": "17:00",
+          "notes": "Tickets at entrance or online. Fri/Sat until 21:00. Samurai swords and ancient artifacts."
+        },
+        {
+          "id": "d02-ameya-yokocho",
+          "name": "Ameya-Yokocho Market",
+          "nameJa": "アメヤ横丁",
+          "type": "food",
+          "address": "10 Ueno, Taito City, Tokyo 110-0005",
+          "start": "10:00",
+          "end": "20:00",
+          "notes": "Street food: takoyaki, yakitori, fresh seafood."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-03",
+      "city": "Tokyo",
+      "notes": "Youth culture: Harajuku, Omotesando, Shibuya. Very crowded on weekends — go early.",
+      "stops": [
+        {
+          "id": "d03-meiji-jingu",
+          "name": "Meiji Jingu Shrine",
+          "nameJa": "明治神宮",
+          "type": "sight",
+          "address": "1-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-8557",
+          "start": "05:00",
+          "end": "18:00",
+          "notes": "FREE entry. Write a wish on an ema (wooden plaque)."
+        },
+        {
+          "id": "d03-takeshita-street",
+          "name": "Takeshita Street",
+          "nameJa": "竹下通り",
+          "type": "shop",
+          "address": "1 Jingumae, Shibuya City, Tokyo 150-0001",
+          "notes": "Harajuku crepes, rainbow cotton candy, animal cafes nearby."
+        },
+        {
+          "id": "d03-cat-street",
+          "name": "Cat Street",
+          "nameJa": "キャットストリート",
+          "type": "free",
+          "address": "Jingumae, Shibuya City, Tokyo 150-0001",
+          "notes": "Vintage shops and trendy cafes connecting Harajuku to Shibuya."
+        },
+        {
+          "id": "d03-omotesando",
+          "name": "Omotesando",
+          "nameJa": "表参道",
+          "type": "free",
+          "address": "Jingumae, Shibuya City, Tokyo",
+          "notes": "Tokyo's Champs-Élysées. Stunning building architecture."
+        },
+        {
+          "id": "d03-shibuya-crossing",
+          "name": "Shibuya Crossing (Scramble Crossing)",
+          "nameJa": "渋谷スクランブル交差点",
+          "type": "sight",
+          "address": "2-2-1 Dogenzaka, Shibuya City, Tokyo 150-0043",
+          "notes": "Best viewed from the Starbucks overlooking the crossing."
+        },
+        {
+          "id": "d03-shibuya-sky",
+          "name": "Shibuya Sky Observation Deck",
+          "nameJa": "渋谷スカイ",
+          "type": "sight",
+          "address": "Shibuya Scramble Square, 2-24-12 Shibuya, Shibuya City, Tokyo 150-6125",
+          "start": "10:00",
+          "end": "22:30",
+          "reservation": {
+            "required": true,
+            "booked": false,
+            "notes": "BOOK ONLINE IN ADVANCE 2–4 weeks ahead. Book sunset slot. https://www.shibuya-sky.com/"
+          }
+        },
+        {
+          "id": "d03-hachiko",
+          "name": "Hachiko Statue & Center-gai",
+          "nameJa": "ハチ公像・センター街",
+          "type": "free",
+          "address": "Shibuya, Tokyo"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-04",
+      "city": "Tokyo",
+      "notes": "Futuristic Tokyo and digital art. Travel via Yurikamome Line for great views.",
+      "stops": [
+        {
+          "id": "d04-teamlab-planets",
+          "name": "teamLab Planets TOKYO",
+          "nameJa": "チームラボ プラネッツ TOKYO",
+          "type": "sight",
+          "address": "6-1-16 Toyosu, Koto City, Tokyo 135-0061",
+          "start": "09:00",
+          "end": "22:00",
+          "reservation": {
+            "required": true,
+            "booked": false,
+            "notes": "BOOK 1–2 MONTHS IN ADVANCE — sells out fast. No shoes allowed. Allow 2–3 hours. https://www.teamlab.art/e/planets/"
+          },
+          "notes": "Walk through digital art in water. Morning slots less crowded."
+        },
+        {
+          "id": "d04-odaiba-seaside-park",
+          "name": "Odaiba Seaside Park",
+          "nameJa": "お台場海浜公園",
+          "type": "free",
+          "address": "1-4 Daiba, Minato City, Tokyo 135-0091",
+          "notes": "Views of Rainbow Bridge and Tokyo Bay. Statue of Liberty replica."
+        },
+        {
+          "id": "d04-miraikan",
+          "name": "Miraikan (National Museum of Emerging Science)",
+          "nameJa": "日本科学未来館",
+          "type": "sight",
+          "address": "2-3-6 Aomi, Koto City, Tokyo 135-0064",
+          "start": "10:00",
+          "end": "17:00",
+          "notes": "Closed Tuesdays. ASIMO robot demos, space exhibits, interactive displays."
+        },
+        {
+          "id": "d04-divercity-gundam",
+          "name": "DiverCity Tokyo Plaza (Gundam Statue)",
+          "nameJa": "ダイバーシティ東京 プラザ",
+          "type": "free",
+          "address": "1-1-10 Aomi, Koto City, Tokyo 135-0064"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-05",
+      "city": "Tokyo",
+      "hotel": {
+        "name": "HOSHINOYA TOKYO",
+        "address": "1-9-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+        "addressJa": "〒100-0004 東京都千代田区大手町1-9-1",
+        "checkIn": "15:00"
+      },
+      "notes": "Check into HOSHINOYA TOKYO — luxury ryokan in the heart of the city.",
+      "stops": [
+        {
+          "id": "d05-tsukiji-outer-market",
+          "name": "Tsukiji Outer Market",
+          "nameJa": "築地場外市場",
+          "type": "food",
+          "address": "4-16-2 Tsukiji, Chuo City, Tokyo 104-0045",
+          "start": "08:00",
+          "end": "11:00",
+          "notes": "Best 8–11am. Fresh sushi for breakfast, tamagoyaki, matcha desserts."
+        },
+        {
+          "id": "d05-hoshinoya-checkin",
+          "name": "Check in to HOSHINOYA TOKYO",
+          "nameJa": "星のや東京 チェックイン",
+          "type": "transit",
+          "address": "1-9-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+          "start": "15:00"
+        },
+        {
+          "id": "d05-hoshinoya-onsen",
+          "name": "HOSHINOYA TOKYO — Onsen, Tea Ceremony & Kaiseki",
+          "nameJa": "星のや東京 温泉・茶道・懐石料理",
+          "type": "free",
+          "notes": "Rooftop onsen (hot spring), traditional tea ceremony, seasonal kaiseki dinner, stargazing."
+        },
+        {
+          "id": "d05-ginza",
+          "name": "Ginza District (Optional Evening)",
+          "nameJa": "銀座",
+          "type": "free",
+          "address": "Ginza, Chuo City, Tokyo",
+          "notes": "Upscale shopping, evening illuminations. Optional — it's okay to stay at the hotel."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-06",
+      "city": "Tokyo",
+      "hotel": {
+        "name": "HOSHINOYA TOKYO",
+        "address": "1-9-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+        "addressJa": "〒100-0004 東京都千代田区大手町1-9-1"
+      },
+      "stops": [
+        {
+          "id": "d06-imperial-palace-east-garden",
+          "name": "Imperial Palace East Gardens",
+          "nameJa": "皇居東御苑",
+          "type": "sight",
+          "address": "1-1 Chiyoda, Chiyoda City, Tokyo 100-0001",
+          "start": "09:00",
+          "end": "16:30",
+          "notes": "FREE. Closed Mon/Fri. Historic castle foundations and traditional gardens."
+        },
+        {
+          "id": "d06-character-street",
+          "name": "Tokyo Station Character Street (Ichiban Plaza)",
+          "nameJa": "東京キャラクターストリート",
+          "type": "shop",
+          "address": "1-9-1 Marunouchi, Chiyoda City, Tokyo 100-0005",
+          "notes": "Pokemon, Studio Ghibli, anime merchandise."
+        },
+        {
+          "id": "d06-marunouchi",
+          "name": "Marunouchi District",
+          "nameJa": "丸の内",
+          "type": "free",
+          "address": "Marunouchi, Chiyoda City, Tokyo"
+        },
+        {
+          "id": "d06-kitte",
+          "name": "KITTE Building",
+          "nameJa": "KITTE",
+          "type": "sight",
+          "address": "2-7-2 Marunouchi, Chiyoda City, Tokyo 100-0005",
+          "notes": "Former post office. Rooftop garden with views of Tokyo Station."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-07",
+      "city": "Tokyo",
+      "hotel": {
+        "name": "HOSHINOYA TOKYO",
+        "address": "1-9-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+        "addressJa": "〒100-0004 東京都千代田区大手町1-9-1"
+      },
+      "notes": "Day trip to Nikko. Tobu Nikko Line from Asakusa Station (~2 hrs). Last trains back 19:00–20:00.",
+      "stops": [
+        {
+          "id": "d07-nikko-toshogu",
+          "name": "Toshogu Shrine",
+          "nameJa": "日光東照宮",
+          "type": "sight",
+          "address": "2301 Sannai, Nikko, Tochigi 321-1431",
+          "start": "08:00",
+          "end": "17:00",
+          "notes": "UNESCO World Heritage. Elaborate colorful carvings. Famous 'see/speak/hear no evil' monkeys. Allow 2–3 hours."
+        },
+        {
+          "id": "d07-shinkyo-bridge",
+          "name": "Shinkyo Bridge (Sacred Bridge)",
+          "nameJa": "神橋",
+          "type": "sight",
+          "address": "Nikko, Tochigi 321-1431",
+          "notes": "Beautiful red bridge — iconic photo spot."
+        },
+        {
+          "id": "d07-rinno-ji",
+          "name": "Rinno-ji Temple",
+          "nameJa": "輪王寺",
+          "type": "sight",
+          "address": "2300 Sannai, Nikko, Tochigi 321-1431"
+        },
+        {
+          "id": "d07-kanmangafuchi",
+          "name": "Kanmangafuchi Abyss (Optional)",
+          "nameJa": "含満淵",
+          "type": "free",
+          "address": "Nikko, Tochigi 321-1431",
+          "notes": "Row of Jizo statues along a riverside path. Skip if short on time."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-08",
+      "city": "Tokyo",
+      "hotel": {
+        "name": "HOSHINOYA TOKYO",
+        "address": "1-9-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+        "addressJa": "〒100-0004 東京都千代田区大手町1-9-1"
+      },
+      "notes": "Day trip to Kamakura. JR Yokosuka Line from Tokyo Station (~1 hr). Pack for Kyoto departure tomorrow.",
+      "stops": [
+        {
+          "id": "d08-great-buddha",
+          "name": "Kotoku-in Temple (Great Buddha / Daibutsu)",
+          "nameJa": "高徳院 鎌倉大仏",
+          "type": "sight",
+          "address": "4-2-28 Hase, Kamakura, Kanagawa 248-0016",
+          "start": "08:00",
+          "end": "17:30",
+          "notes": "You can go inside the Buddha statue!"
+        },
+        {
+          "id": "d08-hase-dera",
+          "name": "Hase-dera Temple",
+          "nameJa": "長谷寺",
+          "type": "sight",
+          "address": "3-11-2 Hase, Kamakura, Kanagawa 248-0016",
+          "start": "08:00",
+          "end": "17:00",
+          "notes": "Beautiful gardens with ocean views, hundreds of Jizo statues."
+        },
+        {
+          "id": "d08-tsurugaoka-hachimangu",
+          "name": "Tsurugaoka Hachimangu Shrine",
+          "nameJa": "鶴岡八幡宮",
+          "type": "sight",
+          "address": "2-1-31 Yukinoshita, Kamakura, Kanagawa 248-0005",
+          "notes": "FREE. Main shrine of Kamakura with beautiful grounds."
+        },
+        {
+          "id": "d08-komachi-dori",
+          "name": "Komachi-dori Shopping Street",
+          "nameJa": "小町通り",
+          "type": "shop",
+          "address": "Komachi, Kamakura, Kanagawa 248-0006"
+        },
+        {
+          "id": "d08-enoshima-optional",
+          "name": "Enoshima Island (Optional Extension)",
+          "nameJa": "江の島",
+          "type": "free",
+          "address": "Enoshima, Fujisawa, Kanagawa",
+          "notes": "Enoden Line from Kamakura. Sea Candle observation tower, coastal views."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-09",
+      "city": "Kyoto",
+      "hotel": {
+        "name": "Kyoto Machiya Kamogawa Gardens",
+        "address": "448-1 Inaricho, Higashiyama-ku, Kyoto 605-0068",
+        "addressJa": "〒605-0068 京都府京都市東山区稲荷町448-1",
+        "checkIn": "16:00"
+      },
+      "notes": "Travel day. Shinkansen from Tokyo Station to Kyoto (~2.5 hours). JR Pass covers.",
+      "stops": [
+        {
+          "id": "d09-shinkansen-kyoto",
+          "name": "Shinkansen — Tokyo to Kyoto",
+          "type": "transit",
+          "notes": "From Tokyo Station. Hikari or Kodama. ~2.5 hours. JR Pass covers."
+        },
+        {
+          "id": "d09-kyoto-station-lunch",
+          "name": "Lunch at Kyoto Station",
+          "nameJa": "京都駅 ランチ",
+          "type": "food",
+          "notes": "Ramen Street or Isetan Department Store."
+        },
+        {
+          "id": "d09-kiyomizudera",
+          "name": "Kiyomizu-dera Temple",
+          "nameJa": "清水寺",
+          "type": "sight",
+          "address": "1-294 Kiyomizu, Higashiyama-ku, Kyoto 605-0862",
+          "start": "06:00",
+          "end": "18:00",
+          "notes": "Tickets at entrance. Wooden stage juts out over the hillside — stunning views."
+        },
+        {
+          "id": "d09-sannenzaka-ninenzaka",
+          "name": "Sannenzaka & Ninenzaka (Historic Streets)",
+          "nameJa": "三年坂・二年坂",
+          "type": "free",
+          "address": "Higashiyama-ku, Kyoto 605-0862",
+          "notes": "Preserved historic streets. Tea houses, shops, great photos."
+        },
+        {
+          "id": "d09-yasaka-pagoda",
+          "name": "Yasaka Pagoda",
+          "nameJa": "八坂の塔",
+          "type": "sight",
+          "address": "Higashiyama-ku, Kyoto 605-0862",
+          "notes": "Iconic five-story pagoda — one of the best photo spots in Kyoto."
+        },
+        {
+          "id": "d09-gion",
+          "name": "Gion District (Geisha Quarter)",
+          "nameJa": "祇園",
+          "type": "free",
+          "address": "Higashiyama-ku, Kyoto 605-0074",
+          "notes": "Walk along Shirakawa Canal. Spot geiko and maiko in evenings."
+        },
+        {
+          "id": "d09-pontocho",
+          "name": "Pontocho Alley",
+          "nameJa": "先斗町",
+          "type": "food",
+          "address": "Pontocho, Nakagyo-ku, Kyoto 604-8015",
+          "notes": "Atmospheric alley with restaurants. Reservations recommended for large groups."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-10",
+      "city": "Kyoto",
+      "hotel": {
+        "name": "Kyoto Machiya Kamogawa Gardens",
+        "address": "448-1 Inaricho, Higashiyama-ku, Kyoto 605-0068",
+        "addressJa": "〒605-0068 京都府京都市東山区稲荷町448-1"
+      },
+      "notes": "Arashiyama — western Kyoto. JR Sagano Line to Saga-Arashiyama Station. Go to bamboo grove before 8am.",
+      "stops": [
+        {
+          "id": "d10-bamboo-grove",
+          "name": "Arashiyama Bamboo Grove",
+          "nameJa": "嵐山竹林",
+          "type": "sight",
+          "address": "Arashiyama, Ukyo-ku, Kyoto 616-0007",
+          "notes": "FREE. Go before 8:00 AM to avoid crowds. Surreal towering bamboo."
+        },
+        {
+          "id": "d10-tenryu-ji",
+          "name": "Tenryu-ji Temple & Garden",
+          "nameJa": "天龍寺",
+          "type": "sight",
+          "address": "68 Saga Tenryuji Susukinobabacho, Ukyo-ku, Kyoto 616-8385",
+          "start": "08:30",
+          "end": "17:30",
+          "notes": "UNESCO World Heritage. Stunning garden. Garden + temple combo available."
+        },
+        {
+          "id": "d10-togetsukyo-bridge",
+          "name": "Togetsukyo Bridge",
+          "nameJa": "渡月橋",
+          "type": "sight",
+          "address": "Ukyo-ku, Kyoto 616-0000",
+          "notes": "Iconic bridge over Katsura River."
+        },
+        {
+          "id": "d10-monkey-park",
+          "name": "Monkey Park Iwatayama",
+          "nameJa": "嵐山モンキーパークいわたやま",
+          "type": "sight",
+          "address": "61 Arashiyama Nakaoshitacho, Nishikyo-ku, Kyoto 616-0004",
+          "start": "09:00",
+          "end": "17:00",
+          "notes": "Hike up for wild monkeys with panoramic city views."
+        },
+        {
+          "id": "d10-kimono-forest",
+          "name": "Kimono Forest (Randen Arashiyama Station)",
+          "nameJa": "キモノフォレスト",
+          "type": "sight",
+          "address": "Arashiyama, Ukyo-ku, Kyoto 616-0007",
+          "notes": "Beautiful cylinder lights with kimono fabric designs."
+        },
+        {
+          "id": "d10-nishiki-market",
+          "name": "Nishiki Market ('Kyoto's Kitchen')",
+          "nameJa": "錦市場",
+          "type": "food",
+          "address": "Nakagyo-ku, Kyoto 604-8054",
+          "notes": "Evening dinner. Street food, samples, local specialties."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-11",
+      "city": "Kyoto",
+      "hotel": {
+        "name": "Kyoto Machiya Kamogawa Gardens",
+        "address": "448-1 Inaricho, Higashiyama-ku, Kyoto 605-0068",
+        "addressJa": "〒605-0068 京都府京都市東山区稲荷町448-1"
+      },
+      "notes": "Northern Kyoto temples. Arrive at Kinkaku-ji early to beat crowds.",
+      "stops": [
+        {
+          "id": "d11-kinkaku-ji",
+          "name": "Kinkaku-ji (Golden Pavilion)",
+          "nameJa": "金閣寺",
+          "type": "sight",
+          "address": "1 Kinkakujicho, Kita-ku, Kyoto 603-8361",
+          "start": "09:00",
+          "end": "17:00",
+          "notes": "Tickets at entrance. Golden pavilion reflecting in pond — iconic photo."
+        },
+        {
+          "id": "d11-ryoan-ji",
+          "name": "Ryoan-ji Temple (Zen Rock Garden)",
+          "nameJa": "龍安寺",
+          "type": "sight",
+          "address": "13 Ryoanji Goryonoshitacho, Ukyo-ku, Kyoto 616-8001",
+          "start": "08:00",
+          "end": "17:00",
+          "notes": "Famous Zen rock garden — 15 stones, contemplate in silence."
+        },
+        {
+          "id": "d11-ninna-ji",
+          "name": "Ninna-ji Temple",
+          "nameJa": "仁和寺",
+          "type": "sight",
+          "address": "33 Omuroouchi, Ukyo-ku, Kyoto 616-8092",
+          "start": "08:00",
+          "end": "17:00",
+          "notes": "Late-blooming Omuro cherry blossoms. Less crowded than other spots."
+        },
+        {
+          "id": "d11-kamo-river-walk",
+          "name": "Evening Walk along Kamo River",
+          "nameJa": "鴨川 夕暮れ散歩",
+          "type": "free",
+          "address": "Kamogawa River, Kyoto",
+          "notes": "Locals gather here for evening strolls."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-12",
+      "city": "Kyoto",
+      "hotel": {
+        "name": "Kyoto Machiya Kamogawa Gardens",
+        "address": "448-1 Inaricho, Higashiyama-ku, Kyoto 605-0068",
+        "addressJa": "〒605-0068 京都府京都市東山区稲荷町448-1"
+      },
+      "notes": "Fushimi Inari and sake district. Lighter walking day.",
+      "stops": [
+        {
+          "id": "d12-fushimi-inari",
+          "name": "Fushimi Inari Taisha (Thousand Torii Gates)",
+          "nameJa": "伏見稲荷大社",
+          "type": "sight",
+          "address": "68 Fukakusa Yabunouchicho, Fushimi-ku, Kyoto 612-0882",
+          "notes": "FREE. Open 24 hours. Hike to summit (2–3 hours) or turn back anytime. Thousands of orange torii gates."
+        },
+        {
+          "id": "d12-tofuku-ji",
+          "name": "Tofuku-ji Temple",
+          "nameJa": "東福寺",
+          "type": "sight",
+          "address": "15-778 Honmachi, Higashiyama-ku, Kyoto 605-0981",
+          "start": "09:00",
+          "end": "16:00",
+          "notes": "Beautiful Zen gardens. Stunning in spring and fall."
+        },
+        {
+          "id": "d12-gekkeikan-sake-museum",
+          "name": "Gekkeikan Okura Sake Museum",
+          "nameJa": "月桂冠大倉記念館",
+          "type": "sight",
+          "address": "247 Minamihamacho, Fushimi-ku, Kyoto 612-8043",
+          "start": "09:30",
+          "end": "16:30",
+          "notes": "Sake brewing history. Tasting included for adults."
+        },
+        {
+          "id": "d12-fushimi-canal",
+          "name": "Fushimi Sake District Canal Walk",
+          "nameJa": "伏見 酒蔵街道",
+          "type": "free",
+          "address": "Fushimi, Kyoto",
+          "notes": "Traditional brewery buildings along the canal. Free tastings at some shops (adults)."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-13",
+      "city": "Kyoto",
+      "hotel": {
+        "name": "Kyoto Machiya Kamogawa Gardens",
+        "address": "448-1 Inaricho, Higashiyama-ku, Kyoto 605-0068",
+        "addressJa": "〒605-0068 京都府京都市東山区稲荷町448-1"
+      },
+      "notes": "Day trip to Nara. Kintetsu or JR Nara Line from Kyoto Station (45–60 min). Pack for Osaka move tomorrow.",
+      "stops": [
+        {
+          "id": "d13-nara-park-deer",
+          "name": "Nara Park & Deer Feeding",
+          "nameJa": "奈良公園",
+          "type": "sight",
+          "address": "Nara, Nara 630-8211",
+          "notes": "FREE park entry. Buy shika senbei (deer crackers) — deer will bow to you! Keep crackers hidden until ready."
+        },
+        {
+          "id": "d13-todai-ji",
+          "name": "Todai-ji Temple (Great Buddha Hall)",
+          "nameJa": "東大寺",
+          "type": "sight",
+          "address": "406-1 Zoshicho, Nara 630-8211",
+          "start": "07:30",
+          "end": "17:30",
+          "notes": "World's largest bronze Buddha. World's largest wooden building. Tickets at entrance."
+        },
+        {
+          "id": "d13-kasuga-taisha",
+          "name": "Kasuga Taisha Shrine",
+          "nameJa": "春日大社",
+          "type": "sight",
+          "address": "160 Kasuganocho, Nara 630-8212",
+          "notes": "FREE outer area. Famous for 3,000 stone and bronze lanterns."
+        },
+        {
+          "id": "d13-kofuku-ji",
+          "name": "Kofuku-ji Temple",
+          "nameJa": "興福寺",
+          "type": "sight",
+          "address": "48 Noboriojicho, Nara 630-8213",
+          "notes": "FREE outer area. Five-story pagoda — second tallest in Japan."
+        },
+        {
+          "id": "d13-naramachi",
+          "name": "Naramachi (Traditional Merchant District)",
+          "nameJa": "ならまち",
+          "type": "free",
+          "address": "Naramachi, Nara 630-8301",
+          "notes": "Traditional buildings, cafes, shops."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-14",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8",
+        "checkIn": "15:00"
+      },
+      "notes": "Arrival in Osaka. JR or Hankyu Line from Kyoto (30–45 min).",
+      "stops": [
+        {
+          "id": "d14-travel-to-osaka",
+          "name": "Travel — Kyoto to Osaka",
+          "type": "transit",
+          "notes": "JR Kyoto Line or Hankyu Line. 30–45 minutes. JR Pass covers JR option."
+        },
+        {
+          "id": "d14-kuromon-ichiba",
+          "name": "Kuromon Ichiba Market ('Osaka's Kitchen')",
+          "nameJa": "黒門市場",
+          "type": "food",
+          "address": "2-4-1 Nipponbashi, Chuo-ku, Osaka 542-0073",
+          "start": "09:00",
+          "end": "18:00",
+          "notes": "Fresh seafood, street food, local specialties."
+        },
+        {
+          "id": "d14-shinsekai",
+          "name": "Shinsekai & Tsutenkaku Tower",
+          "nameJa": "新世界・通天閣",
+          "type": "sight",
+          "address": "Ebisuhigashi, Naniwa-ku, Osaka 556-0002",
+          "notes": "Retro neighborhood. Nostalgic atmosphere."
+        },
+        {
+          "id": "d14-spa-world",
+          "name": "Spa World (Onsen Theme Park)",
+          "nameJa": "スパワールド",
+          "type": "free",
+          "address": "3-4-24 Ebisuhigashi, Naniwa-ku, Osaka 556-0002",
+          "notes": "Various themed baths from around the world. Tickets at entrance."
+        },
+        {
+          "id": "d14-amerikamura",
+          "name": "Amerikamura (American Village)",
+          "nameJa": "アメリカ村",
+          "type": "free",
+          "address": "Nishi-Shinsaibashi, Chuo-ku, Osaka 542-0086",
+          "notes": "Youth culture, vintage shopping, street fashion."
+        },
+        {
+          "id": "d14-dotonbori",
+          "name": "Dotonbori (The Neon Paradise)",
+          "nameJa": "道頓堀",
+          "type": "food",
+          "address": "Dotonbori, Chuo-ku, Osaka 542-0071",
+          "notes": "Glico running man sign. Takoyaki, okonomiyaki. Walk along the canal. Hozenji Yokocho nearby."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-15",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "stops": [
+        {
+          "id": "d15-osaka-castle",
+          "name": "Osaka Castle",
+          "nameJa": "大阪城",
+          "type": "sight",
+          "address": "1-1 Osakajo, Chuo-ku, Osaka 540-0002",
+          "start": "09:00",
+          "end": "17:00",
+          "notes": "Tickets at entrance. Over 1,000 cherry trees in the surrounding park."
+        },
+        {
+          "id": "d15-jo-terrace",
+          "name": "Jo-Terrace Osaka (Castle Park Cafes)",
+          "nameJa": "ジョー・テラス・オオサカ",
+          "type": "food",
+          "address": "Osaka Castle Park",
+          "notes": "Great break spot with castle views."
+        },
+        {
+          "id": "d15-orange-street",
+          "name": "Orange Street (Horie District)",
+          "nameJa": "オレンジストリート",
+          "type": "shop",
+          "address": "Tachibana-dori, Nishi-ku, Osaka",
+          "notes": "Vintage shops, design stores, trendy cafes."
+        },
+        {
+          "id": "d15-shitenno-ji",
+          "name": "Shitenno-ji Temple",
+          "nameJa": "四天王寺",
+          "type": "sight",
+          "address": "1-11-18 Shitennoji, Tennoji-ku, Osaka 543-0051",
+          "notes": "FREE outer area. Founded 6th century — one of Japan's oldest temples."
+        },
+        {
+          "id": "d15-tennoji-harukas",
+          "name": "Tennoji Park & Abeno Harukas Area",
+          "nameJa": "天王寺公園・あべのハルカス周辺",
+          "type": "free",
+          "address": "Tennoji, Osaka"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-16",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "notes": "Day trip to Himeji. JR Tokaido-Sanyo Line from Osaka Station (~1 hr). JR Pass covers.",
+      "stops": [
+        {
+          "id": "d16-himeji-castle",
+          "name": "Himeji Castle",
+          "nameJa": "姫路城",
+          "type": "sight",
+          "address": "68 Honmachi, Himeji, Hyogo 670-0012",
+          "start": "09:00",
+          "end": "17:00",
+          "notes": "UNESCO World Heritage. Japan's most beautiful castle — 'White Heron Castle'. Allow 2–3 hours."
+        },
+        {
+          "id": "d16-kokoen-garden",
+          "name": "Koko-en Garden",
+          "nameJa": "好古園",
+          "type": "sight",
+          "address": "68 Honmachi, Himeji, Hyogo 670-0012",
+          "notes": "Nine Edo-period style gardens. Combo ticket with castle available."
+        },
+        {
+          "id": "d16-mount-shosha",
+          "name": "Engyo-ji Temple, Mount Shosha (Optional)",
+          "nameJa": "圓教寺 (書写山)",
+          "type": "sight",
+          "address": "2968 Shosha, Himeji, Hyogo 670-0012",
+          "notes": "Optional. Ropeway to summit. Film location for 'The Last Samurai'."
+        },
+        {
+          "id": "d16-umeda-sky-building",
+          "name": "Umeda Sky Building (Floating Garden Observatory)",
+          "nameJa": "梅田スカイビル 空中庭園展望台",
+          "type": "sight",
+          "address": "1-1-88 Oyodonaka, Kita-ku, Osaka 531-6023",
+          "notes": "Evening visit. Amazing city panorama from rooftop."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-17",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "notes": "Long day trip to Miyajima. Start very early. JR Pass covers Shinkansen + JR + JR Miyajima Ferry. Check tide times — torii gate most impressive at high tide.",
+      "stops": [
+        {
+          "id": "d17-shinkansen-hiroshima",
+          "name": "Shinkansen — Osaka to Hiroshima",
+          "type": "transit",
+          "notes": "From Shin-Osaka Station. ~1.5 hours. JR Pass covers."
+        },
+        {
+          "id": "d17-ferry-miyajima",
+          "name": "Ferry to Miyajima Island",
+          "nameJa": "宮島フェリー",
+          "type": "transit",
+          "notes": "JR train to Miyajimaguchi, then 10-min ferry. JR Pass covers JR Miyajima Ferry."
+        },
+        {
+          "id": "d17-itsukushima-shrine",
+          "name": "Itsukushima Shrine & Floating Torii Gate",
+          "nameJa": "厳島神社・大鳥居",
+          "type": "sight",
+          "address": "1-1 Miyajimacho, Hatsukaichi, Hiroshima 739-0588",
+          "start": "06:30",
+          "end": "17:30",
+          "notes": "Check tide schedule — torii gate appears to float at high tide. Tickets at shrine entrance."
+        },
+        {
+          "id": "d17-daisho-in",
+          "name": "Daisho-in Temple",
+          "nameJa": "大聖院",
+          "type": "sight",
+          "address": "210 Miyajimacho, Hatsukaichi, Hiroshima 739-0593",
+          "notes": "FREE. Hundreds of statues along winding paths."
+        },
+        {
+          "id": "d17-mount-misen-ropeway",
+          "name": "Mount Misen Ropeway",
+          "nameJa": "弥山ロープウェー",
+          "type": "sight",
+          "address": "Miyajimacho, Hatsukaichi, Hiroshima 739-0588",
+          "notes": "Stunning views of the Seto Inland Sea."
+        },
+        {
+          "id": "d17-miyajima-shopping",
+          "name": "Miyajima Omotesando Shopping Street",
+          "nameJa": "宮島表参道商店街",
+          "type": "shop",
+          "address": "Miyajimacho, Hatsukaichi, Hiroshima",
+          "notes": "Momiji manju (maple leaf cakes), fresh oysters, souvenirs."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-18",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "notes": "Local Osaka day. Shrines, retro neighborhoods, observatory. Lighter walking day.",
+      "stops": [
+        {
+          "id": "d18-sumiyoshi-taisha",
+          "name": "Sumiyoshi Taisha Shrine",
+          "nameJa": "住吉大社",
+          "type": "sight",
+          "address": "2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka 558-0045",
+          "start": "06:30",
+          "end": "17:00",
+          "notes": "FREE. Ancient shrine with unique architectural style. Peaceful morning."
+        },
+        {
+          "id": "d18-sumiyoshi-park",
+          "name": "Sumiyoshi Park",
+          "nameJa": "住吉公園",
+          "type": "free",
+          "address": "Sumiyoshi, Sumiyoshi-ku, Osaka"
+        },
+        {
+          "id": "d18-shinsekai-daytime",
+          "name": "Shinsekai (Daytime)",
+          "nameJa": "新世界",
+          "type": "free",
+          "address": "Ebisuhigashi, Naniwa-ku, Osaka 556-0002",
+          "notes": "See the retro district in daylight."
+        },
+        {
+          "id": "d18-janjan-yokocho",
+          "name": "Janjan Yokocho (Local Food Alley)",
+          "nameJa": "じゃんじゃん横丁",
+          "type": "food",
+          "address": "Shinsekai, Osaka",
+          "notes": "Authentic local food. Kushikatsu (fried skewers) — Osaka specialty."
+        },
+        {
+          "id": "d18-abeno-harukas",
+          "name": "Abeno Harukas (Harukas 300 Observatory)",
+          "nameJa": "あべのハルカス300",
+          "type": "sight",
+          "address": "1-1-43 Abenosuji, Abeno-ku, Osaka 545-6012",
+          "notes": "Views from 300 meters. Tallest building in Japan."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-19",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "notes": "OPTION A: Universal Studios Japan — book tickets in advance, Express Pass recommended. OPTION B: Local Osaka exploration (Osaka Museum of History, Nakanoshima Park, Umeda shopping, Hep Five Ferris Wheel).",
+      "stops": [
+        {
+          "id": "d19-usj",
+          "name": "Universal Studios Japan",
+          "nameJa": "ユニバーサル・スタジオ・ジャパン",
+          "type": "sight",
+          "address": "2-1-33 Sakurajima, Konohana-ku, Osaka 554-0031",
+          "start": "08:30",
+          "end": "21:00",
+          "reservation": {
+            "required": true,
+            "booked": false,
+            "notes": "BOOK ONLINE IN ADVANCE. Express Pass highly recommended for shorter waits. Super Nintendo World timed entry required — book early. https://www.usj.co.jp/e/"
+          },
+          "notes": "OPTION A (full day). Super Nintendo World (Mario Kart, Yoshi), Harry Potter, Jurassic Park, Minion Park, Hollywood Dream coaster."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-20",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "notes": "Flex day — choose your adventure: (1) Return to Kyoto for Philosopher's Path and Ginkaku-ji, (2) Kobe day trip for Kobe beef, Harborland, and Arima Onsen, (3) Osaka deep dive at Nipponbashi/Den Den Town, (4) Last-minute souvenir shopping. Farewell dinner tonight.",
+      "stops": [
+        {
+          "id": "d20-option-kobe",
+          "name": "OPTION: Kobe Day Trip",
+          "nameJa": "神戸",
+          "type": "transit",
+          "notes": "30 min from Osaka. Kobe beef lunch (reservations required!), Harborland, Mount Rokko, Arima Onsen."
+        },
+        {
+          "id": "d20-option-nipponbashi",
+          "name": "OPTION: Nipponbashi / Den Den Town",
+          "nameJa": "日本橋（でんでんタウン）",
+          "type": "shop",
+          "address": "Nipponbashi, Naniwa-ku, Osaka",
+          "notes": "Anime, manga, gaming paradise."
+        },
+        {
+          "id": "d20-option-shinsaibashi",
+          "name": "OPTION: Shinsaibashi Shopping Arcade",
+          "nameJa": "心斎橋筋商店街",
+          "type": "shop",
+          "address": "Shinsaibashi, Chuo-ku, Osaka",
+          "notes": "Covered shopping street — good for last-minute souvenirs."
+        },
+        {
+          "id": "d20-farewell-dinner",
+          "name": "Farewell Dinner",
+          "type": "food",
+          "notes": "Special dinner in Dotonbori or Kitashinchi. Final evening walk through your favorite neighborhood."
+        }
+      ]
+    },
+    {
+      "date": "2027-04-21",
+      "city": "Osaka",
+      "hotel": {
+        "name": "Hilton Osaka",
+        "address": "1-8-8 Umeda, Kita-ku, Osaka 530-0001",
+        "addressJa": "〒530-0001 大阪府大阪市北区梅田1-8-8"
+      },
+      "notes": "Departure day. Arrive at airport 2–3 hours before international flight.",
+      "stops": [
+        {
+          "id": "d21-checkout",
+          "name": "Final Breakfast & Hotel Checkout",
+          "type": "transit",
+          "notes": "Last-minute shopping if time allows."
+        },
+        {
+          "id": "d21-airport-transfer",
+          "name": "Airport Transfer",
+          "type": "transit",
+          "notes": "To KIX: Nankai Rapi:t or JR Haruka (~45–60 min). To ITM: shuttle (~30 min). Arrive 2–3 hours before departure."
+        },
+        {
+          "id": "d21-departure",
+          "name": "Departure from Japan",
+          "nameJa": "帰国",
+          "type": "transit"
+        }
+      ]
+    }
+  ]
+}
