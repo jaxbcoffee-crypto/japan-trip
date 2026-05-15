@@ -1,0 +1,277 @@
+{
+  "days": [
+    {
+      "dayIndex": 0,
+      "file": "day00",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tokyo_Tower%2C_Minato_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Davekern\" title=\"User:Davekern\">David Kernan</a>",
+      "dominantHue": "hsl(197, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 1,
+      "file": "day01",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Five-storied_Pagoda%2C_Sensoji%2C_Tokyo%2C_20240824_1103_5616.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+      "dominantHue": "hsl(192, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 2,
+      "file": "day02",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Benh\" title=\"User:Benh\">Benh LIEU SONG</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75729488@N03\">Flickr</a>)",
+      "dominantHue": "hsl(221, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 3,
+      "file": "day03",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/At_teamLab_Planets_%2848277798316%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/74418647@N00\">Big Ben in Japan</a> from Kawasaki, Japan",
+      "dominantHue": "hsl(242, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 4,
+      "file": "day04",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Pui_van_het_bedrijf_Hoshinoya_Sh%C5%8Dten_in_Kita-Shinagawa_1-ch%C5%8Dme_in_Tokio%2C_-maandag_23_augustus_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/57446062@N00\">Laurent Neyssensas</a>",
+      "dominantHue": "hsl(240, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 5,
+      "file": "day05",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Imperial_Palace_East_Garden_Japan_1989_air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "See Wikimedia Commons",
+      "dominantHue": "hsl(105, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 6,
+      "file": "day06",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Golden_gate_of_Ueno_T%C5%8Dsh%C5%8D-g%C5%AB_Shinto_shrine%2C_Tokyo%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+      "dominantHue": "hsl(34, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 7,
+      "file": "day07",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/The_Great_Buddha_of_Kamakura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Alexandar_Vujadinovic\" title=\"User:Alexandar Vujadinovic\">Alexandar Vujadinovic</a>",
+      "dominantHue": "hsl(180, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 8,
+      "file": "day08",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+      "dominantHue": "hsl(45, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 9,
+      "file": "day09",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+      "dominantHue": "hsl(17, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 10,
+      "file": "day10",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+      "dominantHue": "hsl(86, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 11,
+      "file": "day11",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Kinkaku-ji_in_November_2016_-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<bdi>Martin Falbisoner</bdi>",
+      "dominantHue": "hsl(224, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 12,
+      "file": "day12",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Temple_building%2C_shrine%2C_R%C5%8Dben_Sugi_and_deer_below_Nigatsu-d%C5%8D%2C_T%C5%8Ddai-ji%2C_Nara%2C_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:DimiTalen\" title=\"User:DimiTalen\">DimiTalen</a>",
+      "dominantHue": "hsl(51, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 13,
+      "file": "day13",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<bdi>Martin Falbisoner</bdi>",
+      "dominantHue": "hsl(173, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 14,
+      "file": "day14",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<bdi>Martin Falbisoner</bdi>",
+      "dominantHue": "hsl(333, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 15,
+      "file": "day15",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ch%C3%A2teau_de_Himeji02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Bgag\" title=\"User:Bgag\">Bernard Gagnon</a>",
+      "dominantHue": "hsl(110, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 16,
+      "file": "day16",
+      "url": "gradient-fallback",
+      "attribution": "See Wikimedia Commons",
+      "dominantHue": "hsl(0, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": true
+    },
+    {
+      "dayIndex": 17,
+      "file": "day17",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Umeda_Sky_Building%2C_Osaka%2C_November_2016_-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<bdi>Martin Falbisoner</bdi>",
+      "dominantHue": "hsl(45, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 18,
+      "file": "day18",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Universal_Studios_Japan_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Csiiiyu&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Csiiiyu (page does not exist)\">Csiiiyu</a>",
+      "dominantHue": "hsl(212, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 19,
+      "file": "day19",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Kobe_Port_Tower_and_Maritime_Museum%2C_November_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<bdi>Martin Falbisoner</bdi>",
+      "dominantHue": "hsl(217, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    },
+    {
+      "dayIndex": 20,
+      "file": "day20",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Illuminated_Tenn%C5%8Dji_Park_and_Abeno_Harukas%2C_November_2015%2C_Osaka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "attribution": "<a href=\"//commons.wikimedia.org/wiki/User:Laitche\" title=\"User:Laitche\">Laitche</a>",
+      "dominantHue": "hsl(300, 60%, 45%)",
+      "sizes": [
+        1920,
+        1280,
+        640
+      ],
+      "gradientFallback": false
+    }
+  ]
+}

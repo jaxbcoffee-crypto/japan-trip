@@ -67,3 +67,26 @@ export function buildMapsUrl(stop: Stop): string | undefined {
   }
   return undefined;
 }
+
+export function reservationsByUrgency(): Array<{
+  stop: Stop;
+  day: Day;
+  dayNumber: number;
+}> {
+  const itinerary = getItinerary();
+  const results: Array<{ stop: Stop; day: Day; dayNumber: number }> = [];
+  itinerary.days.forEach((day, idx) => {
+    day.stops.forEach((stop) => {
+      if (stop.reservation) {
+        results.push({ stop, day, dayNumber: idx + 1 });
+      }
+    });
+  });
+  // Sort: unbooked first (ascending dayNumber), then booked
+  return results.sort((a, b) => {
+    const aBooked = a.stop.reservation?.booked ?? false;
+    const bBooked = b.stop.reservation?.booked ?? false;
+    if (aBooked !== bBooked) return aBooked ? 1 : -1;
+    return a.dayNumber - b.dayNumber;
+  });
+}

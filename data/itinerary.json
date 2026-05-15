@@ -26,7 +26,9 @@
           "address": "11 Naitomachi, Shinjuku City, Tokyo 160-0014",
           "start": "09:00",
           "end": "16:30",
-          "notes": "Cherry blossom hotspot. Last entry 16:00. Tickets at entrance."
+          "notes": "Cherry blossom hotspot. Last entry 16:00. Tickets at entrance.",
+          "lat": 35.685072,
+          "lng": 139.709547
         },
         {
           "id": "d01-tokyo-metro-govt",
@@ -35,7 +37,9 @@
           "type": "sight",
           "address": "2-8-1 Nishishinjuku, Shinjuku City, Tokyo 163-8001",
           "start": "19:00",
-          "notes": "FREE observation decks. South tower until 22:00, North until 17:00."
+          "notes": "FREE observation decks. South tower until 22:00, North until 17:00.",
+          "lat": 35.689496,
+          "lng": 139.691709
         },
         {
           "id": "d01-omoide-yokocho",
@@ -51,7 +55,9 @@
           "nameJa": "ゴールデン街",
           "type": "free",
           "address": "1-1-6 Kabukicho, Shinjuku City, Tokyo 160-0021",
-          "notes": "200+ tiny bars in narrow alleys. Great for photos and atmosphere."
+          "notes": "200+ tiny bars in narrow alleys. Great for photos and atmosphere.",
+          "lat": 35.693991,
+          "lng": 139.7047
         }
       ]
     },
@@ -68,7 +74,9 @@
           "address": "2-3-1 Asakusa, Taito City, Tokyo 111-0032",
           "start": "06:00",
           "end": "17:00",
-          "notes": "FREE entry. Tokyo's oldest temple. Try omikuji (fortune telling)."
+          "notes": "FREE entry. Tokyo's oldest temple. Try omikuji (fortune telling).",
+          "lat": 35.713403,
+          "lng": 139.795527
         },
         {
           "id": "d02-nakamise",
@@ -76,7 +84,9 @@
           "nameJa": "仲見世通り",
           "type": "shop",
           "address": "1-36-3 Asakusa, Taito City, Tokyo 111-0032",
-          "notes": "Try melon pan, ningyo-yaki, kibi dango."
+          "notes": "Try melon pan, ningyo-yaki, kibi dango.",
+          "lat": 35.712282,
+          "lng": 139.796486
         },
         {
           "id": "d02-ueno-park",
@@ -84,7 +94,9 @@
           "nameJa": "上野公園",
           "type": "sight",
           "address": "Uenokoen, Taito City, Tokyo 110-0007",
-          "notes": "Cherry blossom hotspot. Great for hanami (flower viewing)."
+          "notes": "Cherry blossom hotspot. Great for hanami (flower viewing).",
+          "lat": 35.715292,
+          "lng": 139.773828
         },
         {
           "id": "d02-tokyo-national-museum",
@@ -94,7 +106,9 @@
           "address": "13-9 Uenokoen, Taito City, Tokyo 110-8712",
           "start": "09:30",
           "end": "17:00",
-          "notes": "Tickets at entrance or online. Fri/Sat until 21:00. Samurai swords and ancient artifacts."
+          "notes": "Tickets at entrance or online. Fri/Sat until 21:00. Samurai swords and ancient artifacts.",
+          "lat": 35.719045,
+          "lng": 139.775968
         },
         {
           "id": "d02-ameya-yokocho",
@@ -121,7 +135,9 @@
           "address": "1-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-8557",
           "start": "05:00",
           "end": "18:00",
-          "notes": "FREE entry. Write a wish on an ema (wooden plaque)."
+          "notes": "FREE entry. Write a wish on an ema (wooden plaque).",
+          "lat": 35.674842,
+          "lng": 139.699627
         },
         {
           "id": "d03-takeshita-street",
@@ -129,7 +145,9 @@
           "nameJa": "竹下通り",
           "type": "shop",
           "address": "1 Jingumae, Shibuya City, Tokyo 150-0001",
-          "notes": "Harajuku crepes, rainbow cotton candy, animal cafes nearby."
+          "notes": "Harajuku crepes, rainbow cotton candy, animal cafes nearby.",
+          "lat": 35.671161,
+          "lng": 139.704955
         },
         {
           "id": "d03-cat-street",
@@ -137,7 +155,9 @@
           "nameJa": "キャットストリート",
           "type": "free",
           "address": "Jingumae, Shibuya City, Tokyo 150-0001",
-          "notes": "Vintage shops and trendy cafes connecting Harajuku to Shibuya."
+          "notes": "Vintage shops and trendy cafes connecting Harajuku to Shibuya.",
+          "lat": 35.666977,
+          "lng": 139.706313
         },
         {
           "id": "d03-omotesando",
@@ -145,7 +165,9 @@
           "nameJa": "表参道",
           "type": "free",
           "address": "Jingumae, Shibuya City, Tokyo",
-          "notes": "Tokyo's Champs-Élysées. Stunning building architecture."
+          "notes": "Tokyo's Champs-Élysées. Stunning building architecture.",
+          "lat": 35.66517,
+          "lng": 139.712435
         },
         {
           "id": "d03-shibuya-crossing",
@@ -153,7 +175,9 @@
           "nameJa": "渋谷スクランブル交差点",
           "type": "sight",
           "address": "2-2-1 Dogenzaka, Shibuya City, Tokyo 150-0043",
-          "notes": "Best viewed from the Starbucks overlooking the crossing."
+          "notes": "Best viewed from the Starbucks overlooking the crossing.",
+          "lat": 35.659495,
+          "lng": 139.700498
         },
         {
           "id": "d03-shibuya-sky",
@@ -196,7 +220,9 @@
             "booked": false,
             "notes": "BOOK 1–2 MONTHS IN ADVANCE — sells out fast. No shoes allowed. Allow 2–3 hours. https://www.teamlab.art/e/planets/"
           },
-          "notes": "Walk through digital art in water. Morning slots less crowded."
+          "notes": "Walk through digital art in water. Morning slots less crowded.",
+          "lat": 35.64938,
+          "lng": 139.789728
         },
         {
           "id": "d04-odaiba-seaside-park",
@@ -204,7 +230,9 @@
           "nameJa": "お台場海浜公園",
           "type": "free",
           "address": "1-4 Daiba, Minato City, Tokyo 135-0091",
-          "notes": "Views of Rainbow Bridge and Tokyo Bay. Statue of Liberty replica."
+          "notes": "Views of Rainbow Bridge and Tokyo Bay. Statue of Liberty replica.",
+          "lat": 35.631084,
+          "lng": 139.777354
         },
         {
           "id": "d04-miraikan",
@@ -244,7 +272,9 @@
           "address": "4-16-2 Tsukiji, Chuo City, Tokyo 104-0045",
           "start": "08:00",
           "end": "11:00",
-          "notes": "Best 8–11am. Fresh sushi for breakfast, tamagoyaki, matcha desserts."
+          "notes": "Best 8–11am. Fresh sushi for breakfast, tamagoyaki, matcha desserts.",
+          "lat": 35.665388,
+          "lng": 139.770473
         },
         {
           "id": "d05-hoshinoya-checkin",
@@ -288,7 +318,9 @@
           "address": "1-1 Chiyoda, Chiyoda City, Tokyo 100-0001",
           "start": "09:00",
           "end": "16:30",
-          "notes": "FREE. Closed Mon/Fri. Historic castle foundations and traditional gardens."
+          "notes": "FREE. Closed Mon/Fri. Historic castle foundations and traditional gardens.",
+          "lat": 35.686701,
+          "lng": 139.757396
         },
         {
           "id": "d06-character-street",
@@ -447,7 +479,9 @@
           "address": "1-294 Kiyomizu, Higashiyama-ku, Kyoto 605-0862",
           "start": "06:00",
           "end": "18:00",
-          "notes": "Tickets at entrance. Wooden stage juts out over the hillside — stunning views."
+          "notes": "Tickets at entrance. Wooden stage juts out over the hillside — stunning views.",
+          "lat": 34.997841,
+          "lng": 135.777106
         },
         {
           "id": "d09-sannenzaka-ninenzaka",
@@ -463,7 +497,9 @@
           "nameJa": "八坂の塔",
           "type": "sight",
           "address": "Higashiyama-ku, Kyoto 605-0862",
-          "notes": "Iconic five-story pagoda — one of the best photo spots in Kyoto."
+          "notes": "Iconic five-story pagoda — one of the best photo spots in Kyoto.",
+          "lat": 34.998556,
+          "lng": 135.779249
         },
         {
           "id": "d09-gion",
@@ -479,7 +515,9 @@
           "nameJa": "先斗町",
           "type": "food",
           "address": "Pontocho, Nakagyo-ku, Kyoto 604-8015",
-          "notes": "Atmospheric alley with restaurants. Reservations recommended for large groups."
+          "notes": "Atmospheric alley with restaurants. Reservations recommended for large groups.",
+          "lat": 35.00598,
+          "lng": 135.771088
         }
       ]
     },
@@ -499,7 +537,9 @@
           "nameJa": "嵐山竹林",
           "type": "sight",
           "address": "Arashiyama, Ukyo-ku, Kyoto 616-0007",
-          "notes": "FREE. Go before 8:00 AM to avoid crowds. Surreal towering bamboo."
+          "notes": "FREE. Go before 8:00 AM to avoid crowds. Surreal towering bamboo.",
+          "lat": 35.016742,
+          "lng": 135.671148
         },
         {
           "id": "d10-tenryu-ji",
@@ -527,7 +567,9 @@
           "address": "61 Arashiyama Nakaoshitacho, Nishikyo-ku, Kyoto 616-0004",
           "start": "09:00",
           "end": "17:00",
-          "notes": "Hike up for wild monkeys with panoramic city views."
+          "notes": "Hike up for wild monkeys with panoramic city views.",
+          "lat": 35.009086,
+          "lng": 135.674967
         },
         {
           "id": "d10-kimono-forest",
@@ -585,7 +627,9 @@
           "address": "33 Omuroouchi, Ukyo-ku, Kyoto 616-8092",
           "start": "08:00",
           "end": "17:00",
-          "notes": "Late-blooming Omuro cherry blossoms. Less crowded than other spots."
+          "notes": "Late-blooming Omuro cherry blossoms. Less crowded than other spots.",
+          "lat": 35.029812,
+          "lng": 135.71415
         },
         {
           "id": "d11-kamo-river-walk",
@@ -633,7 +677,9 @@
           "address": "247 Minamihamacho, Fushimi-ku, Kyoto 612-8043",
           "start": "09:30",
           "end": "16:30",
-          "notes": "Sake brewing history. Tasting included for adults."
+          "notes": "Sake brewing history. Tasting included for adults.",
+          "lat": 34.928879,
+          "lng": 135.761629
         },
         {
           "id": "d12-fushimi-canal",
@@ -687,7 +733,9 @@
           "nameJa": "興福寺",
           "type": "sight",
           "address": "48 Noboriojicho, Nara 630-8213",
-          "notes": "FREE outer area. Five-story pagoda — second tallest in Japan."
+          "notes": "FREE outer area. Five-story pagoda — second tallest in Japan.",
+          "lat": 34.899487,
+          "lng": 135.717696
         },
         {
           "id": "d13-naramachi",
@@ -748,7 +796,9 @@
           "nameJa": "アメリカ村",
           "type": "free",
           "address": "Nishi-Shinsaibashi, Chuo-ku, Osaka 542-0086",
-          "notes": "Youth culture, vintage shopping, street fashion."
+          "notes": "Youth culture, vintage shopping, street fashion.",
+          "lat": 34.672006,
+          "lng": 135.498801
         },
         {
           "id": "d14-dotonbori",
@@ -777,7 +827,9 @@
           "address": "1-1 Osakajo, Chuo-ku, Osaka 540-0002",
           "start": "09:00",
           "end": "17:00",
-          "notes": "Tickets at entrance. Over 1,000 cherry trees in the surrounding park."
+          "notes": "Tickets at entrance. Over 1,000 cherry trees in the surrounding park.",
+          "lat": 34.687374,
+          "lng": 135.525856
         },
         {
           "id": "d15-jo-terrace",
@@ -935,14 +987,18 @@
           "address": "2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka 558-0045",
           "start": "06:30",
           "end": "17:00",
-          "notes": "FREE. Ancient shrine with unique architectural style. Peaceful morning."
+          "notes": "FREE. Ancient shrine with unique architectural style. Peaceful morning.",
+          "lat": 34.613003,
+          "lng": 135.493101
         },
         {
           "id": "d18-sumiyoshi-park",
           "name": "Sumiyoshi Park",
           "nameJa": "住吉公園",
           "type": "free",
-          "address": "Sumiyoshi, Sumiyoshi-ku, Osaka"
+          "address": "Sumiyoshi, Sumiyoshi-ku, Osaka",
+          "lat": 34.611982,
+          "lng": 135.488327
         },
         {
           "id": "d18-shinsekai-daytime",
@@ -993,7 +1049,9 @@
             "booked": false,
             "notes": "BOOK ONLINE IN ADVANCE. Express Pass highly recommended for shorter waits. Super Nintendo World timed entry required — book early. https://www.usj.co.jp/e/"
           },
-          "notes": "OPTION A (full day). Super Nintendo World (Mario Kart, Yoshi), Harry Potter, Jurassic Park, Minion Park, Hollywood Dream coaster."
+          "notes": "OPTION A (full day). Super Nintendo World (Mario Kart, Yoshi), Harry Potter, Jurassic Park, Minion Park, Hollywood Dream coaster.",
+          "lat": 34.665639,
+          "lng": 135.432453
         }
       ]
     },

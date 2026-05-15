@@ -1,0 +1,176 @@
+{
+  "d01-shinjuku-gyoen": {
+    "lat": 35.685072,
+    "lng": 139.709547,
+    "name": "Shinjuku Gyoen National Garden",
+    "city": "Tokyo"
+  },
+  "d01-tokyo-metro-govt": {
+    "lat": 35.689496,
+    "lng": 139.691709,
+    "name": "Tokyo Metropolitan Government Building",
+    "city": "Tokyo"
+  },
+  "d01-golden-gai": {
+    "lat": 35.693991,
+    "lng": 139.7047,
+    "name": "Golden Gai",
+    "city": "Tokyo"
+  },
+  "d02-sensoji": {
+    "lat": 35.713403,
+    "lng": 139.795527,
+    "name": "Senso-ji Temple",
+    "city": "Tokyo"
+  },
+  "d02-nakamise": {
+    "lat": 35.712282,
+    "lng": 139.796486,
+    "name": "Nakamise Shopping Street",
+    "city": "Tokyo"
+  },
+  "d02-ueno-park": {
+    "lat": 35.715292,
+    "lng": 139.773828,
+    "name": "Ueno Park",
+    "city": "Tokyo"
+  },
+  "d02-tokyo-national-museum": {
+    "lat": 35.719045,
+    "lng": 139.775968,
+    "name": "Tokyo National Museum",
+    "city": "Tokyo"
+  },
+  "d03-meiji-jingu": {
+    "lat": 35.674842,
+    "lng": 139.699627,
+    "name": "Meiji Jingu Shrine",
+    "city": "Tokyo"
+  },
+  "d03-takeshita-street": {
+    "lat": 35.671161,
+    "lng": 139.704955,
+    "name": "Takeshita Street",
+    "city": "Tokyo"
+  },
+  "d03-cat-street": {
+    "lat": 35.666977,
+    "lng": 139.706313,
+    "name": "Cat Street",
+    "city": "Tokyo"
+  },
+  "d03-omotesando": {
+    "lat": 35.66517,
+    "lng": 139.712435,
+    "name": "Omotesando",
+    "city": "Tokyo"
+  },
+  "d03-shibuya-crossing": {
+    "lat": 35.659495,
+    "lng": 139.700498,
+    "name": "Shibuya Crossing (Scramble Crossing)",
+    "city": "Tokyo"
+  },
+  "d04-teamlab-planets": {
+    "lat": 35.64938,
+    "lng": 139.789728,
+    "name": "teamLab Planets TOKYO",
+    "city": "Tokyo"
+  },
+  "d04-odaiba-seaside-park": {
+    "lat": 35.631084,
+    "lng": 139.777354,
+    "name": "Odaiba Seaside Park",
+    "city": "Tokyo"
+  },
+  "d05-tsukiji-outer-market": {
+    "lat": 35.665388,
+    "lng": 139.770473,
+    "name": "Tsukiji Outer Market",
+    "city": "Tokyo"
+  },
+  "d06-imperial-palace-east-garden": {
+    "lat": 35.686701,
+    "lng": 139.757396,
+    "name": "Imperial Palace East Gardens",
+    "city": "Tokyo"
+  },
+  "d09-kiyomizudera": {
+    "lat": 34.997841,
+    "lng": 135.777106,
+    "name": "Kiyomizu-dera Temple",
+    "city": "Kyoto"
+  },
+  "d09-yasaka-pagoda": {
+    "lat": 34.998556,
+    "lng": 135.779249,
+    "name": "Yasaka Pagoda",
+    "city": "Kyoto"
+  },
+  "d09-pontocho": {
+    "lat": 35.00598,
+    "lng": 135.771088,
+    "name": "Pontocho Alley",
+    "city": "Kyoto"
+  },
+  "d10-bamboo-grove": {
+    "lat": 35.016742,
+    "lng": 135.671148,
+    "name": "Arashiyama Bamboo Grove",
+    "city": "Kyoto"
+  },
+  "d10-monkey-park": {
+    "lat": 35.009086,
+    "lng": 135.674967,
+    "name": "Monkey Park Iwatayama",
+    "city": "Kyoto"
+  },
+  "d11-ninna-ji": {
+    "lat": 35.029812,
+    "lng": 135.71415,
+    "name": "Ninna-ji Temple",
+    "city": "Kyoto"
+  },
+  "d12-gekkeikan-sake-museum": {
+    "lat": 34.928879,
+    "lng": 135.761629,
+    "name": "Gekkeikan Okura Sake Museum",
+    "city": "Kyoto"
+  },
+  "d13-kofuku-ji": {
+    "lat": 34.899487,
+    "lng": 135.717696,
+    "name": "Kofuku-ji Temple",
+    "city": "Kyoto"
+  },
+  "d14-amerikamura": {
+    "lat": 34.672006,
+    "lng": 135.498801,
+    "name": "Amerikamura (American Village)",
+    "city": "Osaka"
+  },
+  "d15-osaka-castle": {
+    "lat": 34.687374,
+    "lng": 135.525856,
+    "name": "Osaka Castle",
+    "city": "Osaka"
+  },
+  "d18-sumiyoshi-taisha": {
+    "lat": 34.613003,
+    "lng": 135.493101,
+    "name": "Sumiyoshi Taisha Shrine",
+    "city": "Osaka"
+  },
+  "d18-sumiyoshi-park": {
+    "lat": 34.611982,
+    "lng": 135.488327,
+    "name": "Sumiyoshi Park",
+    "city": "Osaka"
+  },
+  "d19-usj": {
+    "lat": 34.665639,
+    "lng": 135.432453,
+    "name": "Universal Studios Japan",
+    "city": "Osaka"
+  }
+}

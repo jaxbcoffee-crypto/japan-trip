@@ -1,0 +1,214 @@
+{
+  "days": [
+    {
+      "dayIndex": 0,
+      "date": "2027-04-01",
+      "city": "Tokyo",
+      "landmark": "Tokyo Tower",
+      "wikimediaTitle": "Tokyo Tower and Skytree 2012.JPG",
+      "altText": "Tokyo Tower illuminated against the night skyline",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 1,
+      "date": "2027-04-02",
+      "city": "Tokyo",
+      "landmark": "Senso-ji Temple",
+      "wikimediaTitle": "Sensoji2019.jpg",
+      "altText": "Senso-ji temple in Asakusa with cherry blossoms",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 2,
+      "date": "2027-04-03",
+      "city": "Tokyo",
+      "landmark": "Shibuya Crossing",
+      "wikimediaTitle": "Shibuya Crossing, Tokyo 2017.jpg",
+      "altText": "Shibuya crossing at night with crowds and neon lights",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 3,
+      "date": "2027-04-04",
+      "city": "Tokyo",
+      "landmark": "teamLab Planets",
+      "wikimediaTitle": "Odaiba seaside park.jpg",
+      "altText": "Odaiba waterfront and Rainbow Bridge, Tokyo Bay",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 4,
+      "date": "2027-04-05",
+      "city": "Tokyo",
+      "landmark": "Hoshinoya Tokyo",
+      "wikimediaTitle": "Ginza district in Tokyo at night.jpg",
+      "altText": "Ginza illuminated streets at night, Tokyo",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 5,
+      "date": "2027-04-06",
+      "city": "Tokyo",
+      "landmark": "Imperial Palace Gardens",
+      "wikimediaTitle": "Imperial Palace East Gardens, Tokyo, Japan.jpg",
+      "altText": "Imperial Palace East Gardens with stone walls and moat",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 6,
+      "date": "2027-04-07",
+      "city": "Nikko",
+      "landmark": "Tosho-gu Shrine",
+      "wikimediaTitle": "Toshogu shrine 2017.jpg",
+      "altText": "Yomeimon gate of Tosho-gu shrine in Nikko",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 7,
+      "date": "2027-04-08",
+      "city": "Kamakura",
+      "landmark": "Great Buddha of Kamakura",
+      "wikimediaTitle": "Kamakura Daibutsu 2016.jpg",
+      "altText": "The Great Buddha of Kamakura (Kotoku-in)",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 8,
+      "date": "2027-04-09",
+      "city": "Kyoto",
+      "landmark": "Kiyomizu-dera Temple",
+      "wikimediaTitle": "Kiyomizudera Stage.jpg",
+      "altText": "Kiyomizu-dera wooden stage overlooking Kyoto",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 9,
+      "date": "2027-04-10",
+      "city": "Kyoto",
+      "landmark": "Fushimi Inari Shrine",
+      "wikimediaTitle": "Fushimi Inari-taisha (8623585086).jpg",
+      "altText": "Thousands of torii gates at Fushimi Inari-taisha",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 10,
+      "date": "2027-04-11",
+      "city": "Kyoto",
+      "landmark": "Arashiyama Bamboo Grove",
+      "wikimediaTitle": "Bamboo avenue arashiyama.jpg",
+      "altText": "Arashiyama bamboo grove path in Kyoto",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 11,
+      "date": "2027-04-12",
+      "city": "Kyoto",
+      "landmark": "Kinkaku-ji Golden Pavilion",
+      "wikimediaTitle": "Kinkaku-ji (Golden Pavilion) in Kyoto, Japan.jpg",
+      "altText": "Kinkaku-ji Golden Pavilion reflected in mirror pond",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 12,
+      "date": "2027-04-13",
+      "city": "Nara",
+      "landmark": "Tōdai-ji Temple and Deer",
+      "wikimediaTitle": "Todaiji14s3200.jpg",
+      "altText": "Todai-ji great hall with deer in the foreground",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 13,
+      "date": "2027-04-14",
+      "city": "Osaka",
+      "landmark": "Osaka Castle",
+      "wikimediaTitle": "Osaka Castle Nishinomaru Garden April 2005.jpg",
+      "altText": "Osaka Castle surrounded by cherry blossoms in spring",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 14,
+      "date": "2027-04-15",
+      "city": "Osaka",
+      "landmark": "Dotonbori",
+      "wikimediaTitle": "Dotonbori Osaka Japan.jpg",
+      "altText": "Dotonbori canal at night with bright neon signs",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 15,
+      "date": "2027-04-16",
+      "city": "Himeji",
+      "landmark": "Himeji Castle",
+      "wikimediaTitle": "Himeji Castle The White Heron Castle.jpg",
+      "altText": "Himeji Castle, the White Heron Castle, in spring",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 16,
+      "date": "2027-04-17",
+      "city": "Miyajima",
+      "landmark": "Itsukushima Floating Torii",
+      "wikimediaTitle": "Miyajima torii 2.jpg",
+      "altText": "Itsukushima shrine floating torii gate at high tide",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 17,
+      "date": "2027-04-18",
+      "city": "Osaka",
+      "landmark": "Umeda Sky Building",
+      "wikimediaTitle": "Umeda Sky Building Night.jpg",
+      "altText": "Umeda Sky Building floating garden observatory at night",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 18,
+      "date": "2027-04-19",
+      "city": "Osaka",
+      "landmark": "Universal Studios Japan",
+      "wikimediaTitle": "Osaka Bay aerial.jpg",
+      "altText": "Osaka Bay area with city skyline in the background",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 19,
+      "date": "2027-04-20",
+      "city": "Kobe",
+      "landmark": "Kobe Port Tower",
+      "wikimediaTitle": "Kobe Port Tower 2009.jpg",
+      "altText": "Kobe Port Tower reflected in Meriken Park harbor",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    },
+    {
+      "dayIndex": 20,
+      "date": "2027-04-21",
+      "city": "Osaka",
+      "landmark": "Abeno Harukas",
+      "wikimediaTitle": "Abeno Harukas and Tennoji Park.jpg",
+      "altText": "Abeno Harukas tower over Tennoji skyline at dusk",
+      "photographer": "See Wikimedia Commons",
+      "license": "CC BY-SA"
+    }
+  ]
+}
