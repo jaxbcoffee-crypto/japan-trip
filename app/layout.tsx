@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
+import { SkipLink, Header, BottomNav } from "@/components/shell";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -62,7 +63,14 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="font-sans antialiased bg-bg text-fg">{children}</body>
+      <body className="font-sans antialiased bg-bg text-fg">
+        <SkipLink />
+        <Header />
+        <main id="main-content" className="pb-16 md:pb-0">
+          {children}
+        </main>
+        <BottomNav />
+      </body>
     </html>
   );
 }
