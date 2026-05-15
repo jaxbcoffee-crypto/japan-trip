@@ -9,8 +9,9 @@ const withPWA = withPWAInit({
   workboxOptions: { disableDevLogs: true },
 });
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   reactStrictMode: true,
-};
+  viewTransition: true,
+} satisfies NextConfig & { viewTransition?: boolean };
 
 export default withPWA(nextConfig);
