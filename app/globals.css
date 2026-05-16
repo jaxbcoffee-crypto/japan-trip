@@ -110,6 +110,23 @@ body {
   }
 }
 
+/* Ken Burns animation for landmark hero */
+@keyframes ken-burns {
+  0%   { transform: scale(1.0) translate(0%, 0%); }
+  50%  { transform: scale(1.08) translate(-1%, -0.5%); }
+  100% { transform: scale(1.04) translate(0.5%, 0.5%); }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 24s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns {
+    animation: none;
+  }
+}
+
 /* Print */
 @media print {
   body {
