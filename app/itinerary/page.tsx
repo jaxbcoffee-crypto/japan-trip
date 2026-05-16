@@ -1,83 +1,92 @@
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
-import { getItinerary, formatDateShort, getDayNumber } from "@/lib/itinerary";
+import { getItinerary } from '@/lib/itinerary'
+import { getTripDayIndex, getTripPhase } from '@/lib/dates'
+import { CityBand } from '@/components/itinerary/CityBand'
+import { DayCard } from '@/components/itinerary/DayCard'
+
+export const revalidate = 3600
 
 export default function ItineraryPage() {
-  const itinerary = getItinerary();
+  const itinerary = getItinerary()
+  const now = new Date()
+  const currentDayIndex = getTripDayIndex(now)
+  const phase = getTripPhase(now)
+
+  const cities = [
+    {
+      name: 'Tokyo',
+      ja: '東京',
+      colorClass: 'text-accent',
+      borderClass: 'border-accent',
+      days: itinerary.days.filter(d => d.city === 'Tokyo'),
+    },
+    {
+      name: 'Kyoto',
+      ja: '京都',
+      colorClass: 'text-sakura',
+      borderClass: 'border-sakura',
+      days: itinerary.days.filter(d => d.city === 'Kyoto'),
+    },
+    {
+      name: 'Osaka',
+      ja: '大阪',
+      colorClass: 'text-gold',
+      borderClass: 'border-gold',
+      days: itinerary.days.filter(d => d.city === 'Osaka'),
+    },
+  ]
 
   return (
-    <main className="max-w-lg mx-auto min-h-dvh bg-white">
-      <header className="sticky top-0 z-10 bg-white border-b border-gray-100 px-6 pt-6 pb-4">
-        <Link
-          href="/"
-          className="inline-flex items-center text-sm text-gray-500 mb-3 min-h-[44px]"
-        >
-          ← Home
-        </Link>
-        <h1 className="text-2xl font-bold text-gray-900">Itinerary</h1>
-        <p className="text-sm text-gray-500 mt-0.5">
-          {itinerary.days.length} days ·{" "}
-          {formatDateShort(itinerary.trip.startDate)} –{" "}
-          {formatDateShort(itinerary.trip.endDate)}
-        </p>
-      </header>
+    <div className="min-h-screen bg-bg">
+      {/* Page hero */}
+      <div className="border-b border-line bg-surface-raised">
+        <div className="max-w-2xl mx-auto px-4 py-10">
+          <p className="font-jp text-2xl text-muted mb-1">全行程</p>
+          <h1 className="font-serif text-5xl font-bold text-fg mb-4">Full Itinerary</h1>
+          <div className="flex flex-wrap gap-4 text-sm text-muted">
+            <span>21 days</span>
+            <span aria-hidden>·</span>
+            <span>3 cities</span>
+            <span aria-hidden>·</span>
+            <span>April 1 – 21, 2027</span>
+          </div>
+        </div>
+      </div>
 
-      <div className="divide-y divide-gray-100">
-        {itinerary.days.map((day) => {
-          const dayNum = getDayNumber(itinerary, day.date);
+      {/* City bands */}
+      <div className="px-4 pt-8 pb-24">
+        {cities.map(city => {
+          // Compute day numbers for this city's days
+          const daysWithNumbers = city.days.map(day => ({
+            day,
+            dayNumber: itinerary.days.indexOf(day) + 1,
+          }))
+          const firstDayNum = daysWithNumbers[0]?.dayNumber ?? 1
+          const lastDayNum = daysWithNumbers[daysWithNumbers.length - 1]?.dayNumber ?? 1
+          const daysLabel = firstDayNum === lastDayNum
+            ? `Day ${firstDayNum}`
+            : `Days ${firstDayNum}–${lastDayNum}`
+
           return (
-            <details key={day.date} className="group">
-              <summary className="flex items-center justify-between px-6 py-4 cursor-pointer select-none list-none min-h-[64px]">
-                <div className="min-w-0">
-                  <p className="text-xs text-gray-400 font-medium">
-                    Day {dayNum}
-                  </p>
-                  <p className="font-semibold text-gray-900 leading-snug">
-                    {day.city}
-                  </p>
-                  <p className="text-sm text-gray-500">
-                    {formatDateShort(day.date)}
-                  </p>
-                </div>
-                <ChevronRight
-                  size={18}
-                  className="shrink-0 ml-4 text-gray-300 transition-transform duration-150 group-open:rotate-90"
-                  aria-hidden
+            <CityBand
+              key={city.name}
+              city={city.name}
+              cityJa={city.ja}
+              daysLabel={daysLabel}
+              colorClass={city.colorClass}
+              borderClass={city.borderClass}
+            >
+              {daysWithNumbers.map(({ day, dayNumber }) => (
+                <DayCard
+                  key={day.date}
+                  day={day}
+                  dayNumber={dayNumber}
+                  isCurrent={phase === 'mid' && dayNumber - 1 === currentDayIndex}
                 />
-              </summary>
-
-              <div className="px-6 pb-5 bg-gray-50">
-                {day.stops.length === 0 ? (
-                  <p className="text-sm text-gray-400 py-2">
-                    No stops planned.
-                  </p>
-                ) : (
-                  <ul className="divide-y divide-gray-100">
-                    {day.stops.map((stop) => (
-                      <li key={stop.id} className="flex gap-3 py-2.5">
-                        <span className="text-xs text-gray-400 tabular-nums w-12 shrink-0 pt-0.5">
-                          {stop.start ?? ""}
-                        </span>
-                        <span className="text-sm text-gray-700 leading-snug">
-                          {stop.name}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                <Link
-                  href={`/itinerary/${day.date}`}
-                  className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-gray-900 min-h-[44px]"
-                >
-                  Full day details
-                  <ChevronRight size={14} aria-hidden />
-                </Link>
-              </div>
-            </details>
-          );
+              ))}
+            </CityBand>
+          )
         })}
       </div>
-    </main>
-  );
+    </div>
+  )
 }
