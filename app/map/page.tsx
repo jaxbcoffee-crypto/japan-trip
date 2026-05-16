@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import { getItinerary } from '@/lib/itinerary'
+
+export const metadata: Metadata = {
+  title: 'Trip Map',
+  description: 'Interactive map of all stops across Tokyo, Kyoto, and Osaka.',
+}
 import MapWithFilter from '@/components/map/CityFilter'
 
 export default function MapPage() {

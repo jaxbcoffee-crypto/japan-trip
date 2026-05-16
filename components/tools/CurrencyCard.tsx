@@ -78,11 +78,16 @@ export function CurrencyCard() {
           </div>
         </div>
 
-        {jpy && usd && (
-          <p className="text-center text-sm text-muted">
-            ¥{parseFloat(jpy).toLocaleString()} ≈ <strong className="text-fg">${parseFloat(usd).toFixed(2)}</strong>
-          </p>
-        )}
+        <p
+          aria-live="polite"
+          aria-atomic="true"
+          className="text-center text-sm text-muted min-h-[1.25rem]"
+        >
+          {jpy && usd
+            ? <>¥{parseFloat(jpy).toLocaleString()} ≈ <strong className="text-fg">${parseFloat(usd).toFixed(2)}</strong></>
+            : null
+          }
+        </p>
 
         {/* Common prices */}
         <div>

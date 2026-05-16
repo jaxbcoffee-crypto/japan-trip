@@ -36,6 +36,7 @@ export function Header() {
               <Link
                 key={href}
                 href={href}
+                aria-current={isActive ? 'page' : undefined}
                 className={cn(
                   'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
                   isActive

@@ -4,7 +4,19 @@ import { getItinerary, formatDateShort } from '@/lib/itinerary'
 import { landmarkForDay } from '@/lib/landmarks'
 import { Camera, Utensils, ShoppingBag, Eye, Footprints, CalendarDays, Hotel } from 'lucide-react'
 
+import type { Metadata } from 'next'
+
 export const revalidate = 3600
+
+export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
+  const { city } = await params
+  const meta = CITY_META[city]
+  if (!meta) return {}
+  return {
+    title: `${city} — ${meta.ja}`,
+    description: meta.tagline,
+  }
+}
 
 const CITY_META: Record<string, {
   ja: string

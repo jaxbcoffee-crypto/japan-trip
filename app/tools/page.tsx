@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import { PhraseCard } from '@/components/tools/PhraseCard'
+
+export const metadata: Metadata = {
+  title: 'Travel Tools',
+  description: 'Phrases, currency converter, and emergency info — all available offline.',
+}
 import { CurrencyCard } from '@/components/tools/CurrencyCard'
 import { EmergencyCard } from '@/components/tools/EmergencyCard'
 

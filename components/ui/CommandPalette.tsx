@@ -122,14 +122,18 @@ export function CommandPalette({ days }: Props) {
 
   return (
     <div
+      role="presentation"
       className="fixed inset-0 z-50 flex items-start justify-center pt-[15svh] px-4"
       onClick={handleClose}
     >
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" aria-hidden="true" />
 
       {/* Panel */}
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search"
         className="relative w-full max-w-lg rounded-2xl border border-line bg-surface-raised shadow-2xl overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
