@@ -80,7 +80,7 @@ export default function DayMap({ stops, className }: DayMapProps) {
       }
     }
 
-    init().catch(console.error)
+    init().catch(() => { /* Leaflet init failed — likely SSR or missing container */ })
 
     return () => {
       if (map) map.remove()

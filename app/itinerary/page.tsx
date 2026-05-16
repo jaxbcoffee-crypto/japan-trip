@@ -1,9 +1,15 @@
+import type { Metadata } from 'next'
 import { getItinerary } from '@/lib/itinerary'
 import { getTripDayIndex, getTripPhase } from '@/lib/dates'
 import { CityBand } from '@/components/itinerary/CityBand'
 import { DayCard } from '@/components/itinerary/DayCard'
 
 export const revalidate = 3600
+
+export const metadata: Metadata = {
+  title: 'Full Itinerary',
+  description: '21 days across Tokyo, Kyoto, and Osaka — April 1–21, 2027.',
+}
 
 export default function ItineraryPage() {
   const itinerary = getItinerary()
@@ -42,13 +48,33 @@ export default function ItineraryPage() {
         <div className="max-w-2xl mx-auto px-4 py-10">
           <p className="font-jp text-2xl text-muted mb-1">全行程</p>
           <h1 className="font-serif text-5xl font-bold text-fg mb-4">Full Itinerary</h1>
-          <div className="flex flex-wrap gap-4 text-sm text-muted">
+          <div className="flex flex-wrap gap-4 text-sm text-muted mb-4">
             <span>21 days</span>
             <span aria-hidden>·</span>
             <span>3 cities</span>
             <span aria-hidden>·</span>
             <span>April 1 – 21, 2027</span>
           </div>
+          {/* Trip progress bar — only visible mid-trip */}
+          {phase === 'mid' && currentDayIndex >= 0 && (
+            <div className="space-y-1">
+              <div className="flex justify-between text-xs text-muted">
+                <span>Day {currentDayIndex + 1} of {itinerary.days.length}</span>
+                <span>{Math.round(((currentDayIndex + 1) / itinerary.days.length) * 100)}% complete</span>
+              </div>
+              <div className="h-1.5 rounded-full bg-line overflow-hidden">
+                <div
+                  className="h-full rounded-full bg-accent transition-all"
+                  style={{ width: `${((currentDayIndex + 1) / itinerary.days.length) * 100}%` }}
+                  role="progressbar"
+                  aria-valuenow={currentDayIndex + 1}
+                  aria-valuemin={1}
+                  aria-valuemax={itinerary.days.length}
+                  aria-label="Trip progress"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

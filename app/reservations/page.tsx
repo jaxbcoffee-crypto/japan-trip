@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import { AlertTriangle, CheckCircle, Info } from 'lucide-react'
 import { reservationsByUrgency } from '@/lib/itinerary'
 import { ReservationCard } from '@/components/reservations/ReservationCard'
+
+export const metadata: Metadata = {
+  title: 'Reservations',
+  description: 'Bookings, confirmations, and walk-in stops for the Japan trip.',
+}
 
 export default function ReservationsPage() {
   const entries = reservationsByUrgency()

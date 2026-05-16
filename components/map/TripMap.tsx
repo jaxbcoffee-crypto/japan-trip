@@ -119,7 +119,7 @@ export default function TripMap({ stops, filter, className }: TripMapProps) {
       }
     }
 
-    init().catch(console.error)
+    init().catch(() => { /* Leaflet init failed — likely SSR or missing container */ })
   }, [stops, filter])
 
   return (
