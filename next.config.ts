@@ -12,6 +12,7 @@ const withPWA = withPWAInit({
 const nextConfig = {
   reactStrictMode: true,
   viewTransition: true,
-} satisfies NextConfig & { viewTransition?: boolean };
+  turbopack: {},
+} satisfies NextConfig & { viewTransition?: boolean; turbopack?: object };
 
 export default withPWA(nextConfig);
