@@ -5,7 +5,18 @@
       "Skill(superpowers:subagent-driven-development)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(npm run *)",
+      "Bash(python3 -c \"import json, sys; d=json.load\\(sys.stdin\\); print\\('Days:', len\\(d['days']\\)\\); print\\('Trip:', d['trip']\\); d1=d['days'][0]; print\\('Day 1:', d1['date'], d1['city'], 'stops:', len\\(d1['stops']\\)\\); print\\('Stop 0:', d1['stops'][0]\\)\")",
+      "Bash(python3 -c \"import json, sys; d=json.load\\(sys.stdin\\); print\\('Days:', len\\(d['days']\\)\\); print\\('Trip:', d['trip']\\); d1=d['days'][0]; print\\('Day 1:', d1['date'], d1['city'], 'stops:', len\\(d1['stops']\\)\\); print\\('First stop:', d1['stops'][0]\\)\")",
+      "Bash(git *)",
+      "Bash(npx eslint *)",
+      "Bash(npm test *)",
+      "Bash(node *)",
+      "Bash(npx tsc *)",
+      "Bash(NEXT_DISABLE_TYPECHECK=1 npm run build)",
+      "Bash(NEXT_DISABLE_TYPECHECK=1 npx next build)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

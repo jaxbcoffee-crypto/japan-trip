@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import { SkipLink, Header, BottomNav } from "@/components/shell";
+import { CommandPaletteWrapper } from "@/components/ui/CommandPaletteWrapper";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
           {children}
         </main>
         <BottomNav />
+        <CommandPaletteWrapper />
       </body>
     </html>
   );

@@ -1,12 +1,13 @@
+import Link from 'next/link'
 import { cn } from '@/lib/cn'
 
 interface CityBandProps {
   city: string
   cityJa: string
-  daysLabel: string      // e.g. "Days 1–8"
+  daysLabel: string
   children: React.ReactNode
-  colorClass: string     // e.g. "text-accent", "text-sakura", "text-gold"
-  borderClass: string    // e.g. "border-accent", "border-sakura", "border-gold"
+  colorClass: string
+  borderClass: string
 }
 
 export function CityBand({ city, cityJa, daysLabel, children, colorClass, borderClass }: CityBandProps) {
@@ -16,10 +17,23 @@ export function CityBand({ city, cityJa, daysLabel, children, colorClass, border
       <div className="sticky top-14 z-10 -mx-4 px-4 py-3 backdrop-blur-md bg-bg/90 border-b border-line/50 mb-4">
         <div className="max-w-2xl mx-auto flex items-baseline justify-between">
           <div className="flex items-baseline gap-3">
-            <h2 className={cn('font-serif text-3xl font-bold', colorClass)}>{city}</h2>
+            <Link
+              href={`/city/${city}`}
+              className={cn('font-serif text-3xl font-bold hover:opacity-80 transition-opacity', colorClass)}
+            >
+              {city}
+            </Link>
             <span className="font-jp text-lg text-muted">{cityJa}</span>
           </div>
-          <span className="text-sm text-muted font-medium">{daysLabel}</span>
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-muted font-medium">{daysLabel}</span>
+            <Link
+              href={`/city/${city}`}
+              className={cn('text-xs font-medium hover:opacity-80 transition-opacity', colorClass)}
+            >
+              Overview →
+            </Link>
+          </div>
         </div>
       </div>
 

@@ -49,7 +49,18 @@ export function Header() {
           })}
         </nav>
 
-        <ThemeToggle />
+        <div className="flex items-center gap-2">
+          {/* Cmd-K search trigger */}
+          <button
+            onClick={() => window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true, bubbles: true }))}
+            className="hidden sm:flex items-center gap-2 text-xs text-muted/60 border border-line/60 rounded-lg px-2.5 py-1.5 hover:border-line hover:text-muted transition-colors"
+            aria-label="Open search (⌘K)"
+          >
+            <span>Search</span>
+            <kbd className="font-sans text-[10px] opacity-70">⌘K</kbd>
+          </button>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   )
