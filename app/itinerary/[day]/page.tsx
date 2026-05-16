@@ -1,113 +1,112 @@
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import { MapPin } from "lucide-react";
-import {
-  getItinerary,
-  getDayByDate,
-  getDayNumber,
-  formatDateShort,
-} from "@/lib/itinerary";
-import { StopCard } from "@/components/StopCard";
+import { notFound } from 'next/navigation'
+import { getItinerary } from '@/lib/itinerary'
+import { DayHero } from '@/components/itinerary/DayHero'
+import { StopCard } from '@/components/StopCard'
+import { WalkingHint } from '@/components/itinerary/WalkingHint'
+import { DayMapClient } from '@/components/map/DayMapClient'
+import { Card } from '@/components/ui/Card'
+import { Hotel, FileText } from 'lucide-react'
 
-type Props = {
-  params: Promise<{ day: string }>;
-};
+export async function generateStaticParams() {
+  const itinerary = getItinerary()
+  return itinerary.days.map((_, idx) => ({ day: String(idx + 1) }))
+}
 
-export default async function DayPage({ params }: Props) {
-  const { day } = await params;
-  const itinerary = getItinerary();
-  const dayData = getDayByDate(itinerary, day);
+export default async function DayPage({ params }: { params: Promise<{ day: string }> }) {
+  const { day } = await params
+  const dayNumber = parseInt(day, 10)
 
-  if (!dayData) notFound();
+  if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 21) {
+    notFound()
+  }
 
-  const dayNum = getDayNumber(itinerary, day);
-  const hotelMapsUrl = dayData.hotel?.address
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dayData.hotel.address)}`
-    : undefined;
+  const itinerary = getItinerary()
+  const dayData = itinerary.days[dayNumber - 1]
+
+  if (!dayData) notFound()
+
+  const dayIndex = dayNumber - 1
+  const totalDays = itinerary.days.length
+
+  // Stops with lat/lng for the map
+  const mappableStops = dayData.stops
+    .filter(s => s.lat != null && s.lng != null)
+    .map(s => ({ id: s.id, name: s.name, lat: s.lat!, lng: s.lng!, type: s.type }))
 
   return (
-    <main className="max-w-lg mx-auto min-h-dvh bg-white pb-12">
-      <header className="sticky top-0 z-10 bg-white border-b border-gray-100 px-6 pt-6 pb-4">
-        <Link
-          href="/itinerary"
-          className="inline-flex items-center text-sm text-gray-500 mb-3 min-h-[44px]"
-        >
-          ← All Days
-        </Link>
-        <p className="text-xs text-gray-400 font-medium">Day {dayNum}</p>
-        <h1 className="text-2xl font-bold text-gray-900">{dayData.city}</h1>
-        <p className="text-sm text-gray-500">{formatDateShort(dayData.date)}</p>
-      </header>
+    <div className="min-h-screen bg-bg">
+      <DayHero
+        dayIndex={dayIndex}
+        dayNumber={dayNumber}
+        date={dayData.date}
+        city={dayData.city}
+        totalDays={totalDays}
+      />
 
-      <div className="px-6 py-6 space-y-6">
+      <div className="max-w-2xl mx-auto px-4 py-6 space-y-4 pb-24">
+        {/* Inline map */}
+        {mappableStops.length >= 2 && (
+          <Card className="overflow-hidden p-0">
+            <DayMapClient
+              stops={mappableStops}
+              className="w-full h-52 sm:h-64 rounded-xl"
+            />
+          </Card>
+        )}
+
+        {/* Hotel info */}
         {dayData.hotel && (
-          <section aria-label="Hotel">
-            <div className="bg-gray-50 rounded-2xl p-4">
-              <p className="text-xs text-gray-400 font-medium mb-1">Hotel</p>
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0">
-                  <p className="font-semibold text-gray-900">
-                    {dayData.hotel.name}
-                  </p>
-                  {dayData.hotel.checkIn && (
-                    <p className="text-sm text-gray-500 mt-0.5">
-                      Check-in {dayData.hotel.checkIn}
-                    </p>
-                  )}
-                  {dayData.hotel.address && (
-                    <p className="text-xs text-gray-400 mt-1 leading-relaxed">
-                      {dayData.hotel.address}
-                    </p>
-                  )}
-                  {dayData.hotel.addressJa && (
-                    <p className="text-xs text-gray-400 leading-relaxed">
-                      {dayData.hotel.addressJa}
-                    </p>
-                  )}
-                </div>
-                {hotelMapsUrl && (
-                  <a
-                    href={hotelMapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-none flex items-center justify-center w-11 h-11 rounded-full bg-white text-gray-500"
-                    aria-label={`Open ${dayData.hotel.name} in Google Maps`}
-                  >
-                    <MapPin size={18} aria-hidden />
-                  </a>
+          <Card>
+            <div className="flex items-start gap-3">
+              <Hotel size={16} className="text-accent mt-0.5 shrink-0" />
+              <div>
+                <p className="text-xs text-muted font-medium uppercase tracking-wider mb-0.5">Accommodation</p>
+                <p className="font-medium text-fg">{dayData.hotel.name}</p>
+                {dayData.hotel.address && (
+                  <p className="text-sm text-muted mt-0.5">{dayData.hotel.address}</p>
+                )}
+                {dayData.hotel.checkIn && (
+                  <p className="text-xs text-muted mt-1">Check-in: {dayData.hotel.checkIn}</p>
                 )}
               </div>
             </div>
-          </section>
+          </Card>
         )}
 
+        {/* Day notes */}
         {dayData.notes && (
-          <div className="bg-blue-50 rounded-2xl px-4 py-3">
-            <p className="text-sm text-blue-700 leading-relaxed">
-              {dayData.notes}
-            </p>
-          </div>
+          <Card>
+            <div className="flex items-start gap-3">
+              <FileText size={16} className="text-muted mt-0.5 shrink-0" />
+              <p className="text-sm text-muted italic leading-relaxed">{dayData.notes}</p>
+            </div>
+          </Card>
         )}
 
-        <section aria-label="Stops">
-          {dayData.stops.length === 0 ? (
-            <p className="text-sm text-gray-400 py-4 text-center">
-              No stops planned for this day.
-            </p>
-          ) : (
-            <div>
-              {dayData.stops.map((stop) => (
-                <StopCard key={stop.id} stop={stop} />
-              ))}
-            </div>
-          )}
-        </section>
-      </div>
-    </main>
-  );
-}
+        {/* Stops with walking hints between */}
+        <div className="space-y-0">
+          {dayData.stops.map((stop, idx) => {
+            const prevStop = idx > 0 ? dayData.stops[idx - 1] : null
+            const showWalk = prevStop &&
+              prevStop.lat != null && prevStop.lng != null &&
+              stop.lat != null && stop.lng != null
 
-export function generateStaticParams() {
-  const itinerary = getItinerary();
-  return itinerary.days.map((day) => ({ day: day.date }));
+            return (
+              <div key={stop.id}>
+                {showWalk && (
+                  <WalkingHint
+                    fromLat={prevStop!.lat!}
+                    fromLng={prevStop!.lng!}
+                    toLat={stop.lat!}
+                    toLng={stop.lng!}
+                  />
+                )}
+                <StopCard stop={stop} />
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </div>
+  )
 }
