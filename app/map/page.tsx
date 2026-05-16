@@ -31,7 +31,7 @@ export default function MapPage() {
         </div>
       </div>
 
-      <div className="flex-1 max-w-5xl mx-auto w-full px-0 sm:px-4">
+      <div className="flex-1 max-w-5xl mx-auto w-full px-0 sm:px-4 animate-enter">
         <MapWithFilter stops={stops} totalStops={totalStops} />
       </div>
     </div>

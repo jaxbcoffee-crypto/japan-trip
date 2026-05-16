@@ -65,6 +65,16 @@ export default function HomePage() {
         />
       </div>
 
+      {/* Scroll hint — only shown pre-trip when there's nothing "live" */}
+      {phase === 'pre' && (
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/40 pointer-events-none">
+          <span className="text-[10px] uppercase tracking-widest">Scroll</span>
+          <svg className="animate-bounce-y" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+      )}
+
       {/* Trip arc timeline at bottom */}
       <div className="relative pb-6">
         <TripArc currentDayIndex={dayIndex} />

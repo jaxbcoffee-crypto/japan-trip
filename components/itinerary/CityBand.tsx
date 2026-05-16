@@ -37,7 +37,7 @@ export function CityBand({ city, cityJa, daysLabel, children, colorClass, border
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto space-y-2">
+      <div className="max-w-2xl mx-auto space-y-2 stagger-children">
         {children}
       </div>
     </section>

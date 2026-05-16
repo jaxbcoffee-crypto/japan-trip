@@ -43,7 +43,7 @@ export default async function DayPage({ params }: { params: Promise<{ day: strin
         totalDays={totalDays}
       />
 
-      <div className="max-w-2xl mx-auto px-4 py-6 space-y-4 pb-24">
+      <div className="max-w-2xl mx-auto px-4 py-6 space-y-4 pb-24 animate-enter">
         {/* Inline map */}
         {mappableStops.length >= 2 && (
           <Card className="overflow-hidden p-0">
@@ -84,7 +84,7 @@ export default async function DayPage({ params }: { params: Promise<{ day: strin
         )}
 
         {/* Stops with walking hints between */}
-        <div className="space-y-0">
+        <div className="space-y-0 stagger-children">
           {dayData.stops.map((stop, idx) => {
             const prevStop = idx > 0 ? dayData.stops[idx - 1] : null
             const showWalk = prevStop &&

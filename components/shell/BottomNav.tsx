@@ -30,10 +30,14 @@ export function BottomNav() {
               key={href}
               href={href}
               className={cn(
-                'flex-1 flex flex-col items-center justify-center gap-0.5 text-[10px] font-medium transition-colors',
+                'relative flex-1 flex flex-col items-center justify-center gap-0.5 text-[10px] font-medium transition-colors',
                 isActive ? 'text-accent' : 'text-muted hover:text-fg'
               )}
             >
+              {/* Active dot indicator */}
+              {isActive && (
+                <span className="absolute top-1.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />
+              )}
               <Icon size={20} strokeWidth={isActive ? 2 : 1.5} />
               {label}
             </Link>

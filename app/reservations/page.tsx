@@ -22,7 +22,7 @@ export default function ReservationsPage() {
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-10">
+      <div className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-10 animate-enter">
         {/* Action required */}
         {actionRequired.length > 0 && (
           <section>

@@ -135,7 +135,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-10">
+      <div className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-10 animate-enter">
         {/* Hotels */}
         {hotels.length > 0 && (
           <section>

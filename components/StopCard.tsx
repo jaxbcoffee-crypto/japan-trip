@@ -29,7 +29,7 @@ export function StopCard({ stop, compact = false }: StopCardProps) {
   return (
     <article className={cn(
       'group relative flex gap-3 rounded-xl border border-line bg-surface',
-      'hover:border-line/80 hover:shadow-sm transition-all',
+      'hover:border-accent/25 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200',
       compact ? 'p-3' : 'p-4'
     )}>
       {/* Type icon column */}

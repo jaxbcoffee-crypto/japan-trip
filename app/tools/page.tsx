@@ -14,7 +14,7 @@ export default function ToolsPage() {
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-8">
+      <div className="max-w-2xl mx-auto px-4 py-8 pb-24 space-y-8 animate-enter">
         <CurrencyCard />
         <PhraseCard />
         <EmergencyCard />

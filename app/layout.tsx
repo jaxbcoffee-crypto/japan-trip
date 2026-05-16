@@ -27,24 +27,34 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Japan Trip Companion",
-  description: "Personal Japan trip companion. Offline-first.",
+  title: {
+    default: "Japan Trip Companion",
+    template: "%s · Japan Trip",
+  },
+  description: "Personal Japan trip companion — itinerary, maps, reservations. Offline-first.",
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
+    statusBarStyle: "black-translucent",
     title: "Japan Trip",
   },
   icons: {
     icon: "/icons/icon-192.png",
     apple: "/icons/icon-192.png",
   },
+  formatDetection: {
+    telephone: false,
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  minimumScale: 1,
   viewportFit: "cover",
-  themeColor: "#1f2937",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FAF7F2" },
+    { media: "(prefers-color-scheme: dark)",  color: "#0D0D0D" },
+  ],
 };
 
 // Hardcoded FOUC-prevention script — no user data, XSS-safe
