@@ -36,6 +36,24 @@ if (credits?.days && Array.isArray(credits.days)) {
   }
 }
 
+/**
+ * Wikimedia attributions come back as HTML (e.g. `<a href="…">David Kernan</a>`).
+ * Strip tags and decode the few entities that show up so captions render as
+ * clean plain text instead of literal markup.
+ */
+function cleanAttribution(raw: string): string {
+  return raw
+    .replace(/<[^>]*>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;|&#x27;/gi, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export function landmarkForDay(dayIndex: number): LandmarkInfo | null {
   const data = landmarksData.days.find((d) => d.dayIndex === dayIndex);
   if (!data) return null;
@@ -43,7 +61,7 @@ export function landmarkForDay(dayIndex: number): LandmarkInfo | null {
   const credit: CreditEntry = creditsMap[dayIndex] ?? { dayIndex };
   return {
     ...data,
-    attribution: credit.attribution ?? data.photographer,
+    attribution: cleanAttribution(credit.attribution ?? data.photographer),
     dominantHue: credit.dominantHue ?? "#3949AB",
     srcSet: {
       avif: `/landmarks/day${nn}-1920.avif 1920w, /landmarks/day${nn}-1280.avif 1280w, /landmarks/day${nn}-640.avif 640w`,

@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
-@theme inline {
-  /* Fonts */
-  --font-serif: var(--font-cormorant);
-  --font-sans: var(--font-inter);
-  --font-jp: var(--font-noto-jp);
-
+/*
+ * Colors use a NON-inline @theme block so the utilities compile to
+ * `var(--color-*)`. That lets the [data-theme="dark"] overrides below
+ * actually re-theme the UI at runtime. (With `@theme inline` the values
+ * are baked in as literals and dark mode never applies.)
+ */
+@theme {
   /* Semantic colors — light mode defaults */
   --color-bg: #FAF7F2;
   --color-fg: #1A1A1A;
@@ -19,6 +20,13 @@
   --color-gold: #C9A961;
   --color-surface: #FFFFFF;
   --color-surface-raised: #F5F0EB;
+}
+
+@theme inline {
+  /* Fonts — reference Next.js font CSS variables, so must stay inline */
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+  --font-jp: var(--font-noto-jp);
 
   /* Motion */
   --duration-fast: 120ms;
