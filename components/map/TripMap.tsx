@@ -28,10 +28,6 @@ const cityColors: Record<string, string> = {
 
 const DEFAULT_COLOR = '#6B6560'
 
-const typeSymbols: Record<string, string> = {
-  sight: '●', food: '▲', shop: '■', transit: '◆', free: '✦',
-}
-
 export default function TripMap({ stops, filter, className }: TripMapProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<unknown>(null)
@@ -90,7 +86,6 @@ export default function TripMap({ stops, filter, className }: TripMapProps) {
       filtered.forEach(stop => {
         bounds.push([stop.lat, stop.lng])
         const color = cityColors[stop.city] ?? DEFAULT_COLOR
-        const _symbol = typeSymbols[stop.type] ?? '●'
 
         const icon = L.divIcon({
           html: `<div style="background:${color};color:white;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3);cursor:pointer" title="${stop.name}">${stop.dayNumber}</div>`,

@@ -11,20 +11,17 @@ const QUICK_AMOUNTS = [1000, 2000, 5000, 10000, 50000]
 export function CurrencyCard() {
   const [jpy, setJpy] = useState('')
   const [usd, setUsd] = useState('')
-  const [mode, setMode] = useState<'jpy' | 'usd'>('jpy')
 
   const handleJpy = (val: string) => {
     const n = parseFloat(val)
     setJpy(val)
     setUsd(isNaN(n) ? '' : (n / APPROX_RATE).toFixed(2))
-    setMode('jpy')
   }
 
   const handleUsd = (val: string) => {
     const n = parseFloat(val)
     setUsd(val)
     setJpy(isNaN(n) ? '' : Math.round(n * APPROX_RATE).toString())
-    setMode('usd')
   }
 
   return (

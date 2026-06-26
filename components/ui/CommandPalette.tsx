@@ -83,7 +83,7 @@ export function CommandPalette({ days }: Props) {
     const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault()
-        open ? handleClose() : handleOpen()
+        if (open) handleClose(); else handleOpen()
       }
       if (e.key === 'Escape' && open) handleClose()
     }
@@ -96,10 +96,6 @@ export function CommandPalette({ days }: Props) {
       setTimeout(() => inputRef.current?.focus(), 50)
     }
   }, [open])
-
-  useEffect(() => {
-    setActiveIdx(0)
-  }, [query])
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'ArrowDown') {
@@ -144,7 +140,7 @@ export function CommandPalette({ days }: Props) {
             ref={inputRef}
             type="text"
             value={query}
-            onChange={e => setQuery(e.target.value)}
+            onChange={e => { setQuery(e.target.value); setActiveIdx(0) }}
             onKeyDown={handleKeyDown}
             placeholder="Search pages, days, cities…"
             className="flex-1 bg-transparent text-sm text-fg placeholder:text-muted outline-none"

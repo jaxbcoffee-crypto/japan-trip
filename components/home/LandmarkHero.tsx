@@ -16,14 +16,13 @@ export function LandmarkHero({ dayIndex, city, className }: LandmarkHeroProps) {
         <picture className="absolute inset-0 w-full h-full">
           <source type="image/avif" srcSet={info.srcSet.avif} sizes="100vw" />
           <source type="image/webp" srcSet={info.srcSet.webp} sizes="100vw" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {/* raw <img> required for <picture> art direction (next/image can't do <source>) */}
           <img
             src={info.src}
             srcSet={info.srcSet.jpg}
             sizes="100vw"
             alt={info.altText}
             className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
-            // @ts-ignore — fetchPriority is valid HTML but TS defs may lag
             fetchPriority="high"
             decoding="async"
           />

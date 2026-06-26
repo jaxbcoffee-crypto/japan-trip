@@ -34,13 +34,6 @@ const CITY_GRADIENTS = {
   Kobe:     { stops: ['#0d47a1', '#1976d2', '#90caf9'], angle: 135 },
 }
 
-function hexToRgb(hex) {
-  const r = parseInt(hex.slice(1, 3), 16)
-  const g = parseInt(hex.slice(3, 5), 16)
-  const b = parseInt(hex.slice(5, 7), 16)
-  return { r, g, b }
-}
-
 /** Generate a gradient SVG buffer for a given city and width/height */
 function gradientSvgBuffer(city, width, height) {
   const g = CITY_GRADIENTS[city] ?? CITY_GRADIENTS['Tokyo']

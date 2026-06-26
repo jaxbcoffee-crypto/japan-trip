@@ -4,7 +4,6 @@ import tripConfigRaw from "@/data/trip-config.json";
 const tripConfig = tripConfigRaw.trip;
 
 const START_DATE = new Date(tripConfig.startDate + "T00:00:00+09:00");
-const END_DATE = new Date(tripConfig.endDate + "T23:59:59+09:00");
 
 export type TripPhase = "pre" | "mid" | "post";
 
